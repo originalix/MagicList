@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!-- normailze css -->
+    <link rel="stylesheet" href="assets/css/normailze.css" />
+
+    <!-- Amaze UI CSS -->
+    <link rel="stylesheet" href="assets/css/amazeui.css">
+    <link rel="stylesheet" href="assets/css/amazeui.flat.css">
 </head>
 
 <style>
@@ -25,19 +32,52 @@
         top: 0; 
     }
 
-    p.l-index-bar-title {
+    h1.l-index-bar-title {
         margin: 10px auto;
+        text-align: center;
         font-size: 18px;
         color: #564f4b;
-        text-align: center;
+    }
+    
+    .l-index-main {
+        position: relative;
+        top: 44px;
+        right: 0;
+        left: 0;
+    }
+    
+    .l-index-list-content {
+        display: block;
+    }
+
+    .am-list {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    .am-list > li {
+         list-style-type: none;
     }
 </style>
 <body>
     <section class="l-index">
-        /* 头部导航栏 */
+        <!-- 头部导航栏 -->
         <header class="l-index-bar l-index-bar-nav">
-            <p class="l-index-bar-title">购物清单</p>
+            <h1 class="l-index-bar-title">装修清单</h1>
         </header>
+        <!-- 中间清单列表 --> 
+        <div class="l-index-main">
+            <ul class="am-list">
+                <li>
+                    <div class="l-index-list-content">
+                        <div class="l-index-lititle"><span>耗材</span></div>
+                        <div class="l-index-licount"><span>0/1</span></div>
+                        <div class="l-index-liprice"><span>合计：￥50000</span></div>
+                    </div>
+                </li>
+            </ul>    
+        </div>
     </section>
 </body>
 </html>
