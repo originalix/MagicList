@@ -9,8 +9,7 @@ class TestController extends Controller
 {
     public function actionIndex()
     {
-        $response = Yii::$app->response;
-        $response->format = \yii\web\Response::FORMAT_JSON;
-        return ['message' => 'hello wsx'];   
+        $this->layout = false;
+        return $this->render('index');
     }
 }
