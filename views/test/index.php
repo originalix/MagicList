@@ -8,7 +8,7 @@
 </head>
 
 <style>
-    .bar { 
+    .l-index-bar { 
         position: fixed; 
         right: 0; 
         left: 0; 
@@ -21,11 +21,11 @@
         -webkit-backface-visibility: hidden; 
         backface-visibility: hidden; 
     } 
-    .bar-nav { 
+    .l-index-bar-nav { 
         top: 0; 
     }
 
-    p.bar-title {
+    p.l-index-bar-title {
         margin: 10px auto;
         font-size: 18px;
         color: #564f4b;
@@ -33,8 +33,11 @@
     }
 </style>
 <body>
-    <header class="bar bar-nav">
-        <p class="bar-title">购物清单</p>
-    </header>
+    <section class="l-index">
+        /* 头部导航栏 */
+        <header class="l-index-bar l-index-bar-nav">
+            <p class="l-index-bar-title">购物清单</p>
+        </header>
+    </section>
 </body>
 </html>
