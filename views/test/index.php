@@ -12,54 +12,9 @@
     <!-- Amaze UI CSS -->
     <link rel="stylesheet" href="assets/css/amazeui.css">
     <link rel="stylesheet" href="assets/css/amazeui.flat.css">
+    <link rel="stylesheet" href="assets/css/l-index.css">
 </head>
 
-<style>
-    .l-index-bar { 
-        position: fixed; 
-        right: 0; 
-        left: 0; 
-        z-index: 10;
-        height: 44px; 
-        padding-right: 10px; 
-        padding-left: 10px; 
-        background-color: #f5f5f5; 
-        border-bottom: 1px solid #dddddd; 
-        -webkit-backface-visibility: hidden; 
-        backface-visibility: hidden; 
-    } 
-    .l-index-bar-nav { 
-        top: 0; 
-    }
-
-    h1.l-index-bar-title {
-        margin: 10px auto;
-        text-align: center;
-        font-size: 18px;
-        color: #564f4b;
-    }
-    
-    .l-index-main {
-        position: relative;
-        top: 44px;
-        right: 0;
-        left: 0;
-    }
-    
-    .l-index-list-content {
-        display: block;
-    }
-
-    .am-list {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 0;
-    }
-
-    .am-list > li {
-         list-style-type: none;
-    }
-</style>
 <body>
     <section class="l-index">
         <!-- 头部导航栏 -->
@@ -71,9 +26,23 @@
             <ul class="am-list">
                 <li>
                     <div class="l-index-list-content">
-                        <div class="l-index-lititle"><span>耗材</span></div>
+                        <div class="l-index-lititle"><span>硬装部分</span></div>
+                        <div class="l-index-liprice"><span>合计：￥80000</span></div>
                         <div class="l-index-licount"><span>0/1</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-index-list-content">
+                        <div class="l-index-lititle"><span>家具柜子</span></div>
+                        <div class="l-index-liprice"><span>合计：￥21500</span></div>
+                        <div class="l-index-licount"><span>0/1</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-index-list-content">
+                        <div class="l-index-lititle"><span>各类家电</span></div>
                         <div class="l-index-liprice"><span>合计：￥50000</span></div>
+                        <div class="l-index-licount"><span>0/1</span></div>
                     </div>
                 </li>
             </ul>    
