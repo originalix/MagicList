@@ -39,6 +39,7 @@
 
 .header-content {
 	margin-top: 10px;
+	margin-bottom: 8px;
 	font-size: 16px;
 }
 
@@ -96,7 +97,35 @@
 }
 
 .comment-all-comment {
-	margin: 0 0 20px 15px;
+	margin: 0 0 0 15px;
 	font-size: 14px;
 	font-weight: 400;
+}
+
+.l-comment-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.l-comment-list-li {
+}
+
+#comment-li-left {
+	float: left;
+	width: 51px;
+	background-color: white;
+}
+
+#comment-li-right {
+	background-color: ƒ white;
+	margin-left: 61px;
+	/*==等于左边栏宽度==*/
+	margin-right: 16px;
+	padding-top: 16px;
+}
+
+.comment-li-replyBtn {
+	padding: 0;
+	font-size: 14px;
 }
