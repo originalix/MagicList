@@ -1,0 +1,102 @@
+#left {
+	float: left;
+	width: 51px;
+	background-color: white;
+}
+
+#header-comment {
+	background-color: ƒ white;
+	margin-left: 61px;
+	/*==等于左边栏宽度==*/
+	margin-right: 16px;
+	padding-top: 16px;
+}
+
+.portait {
+	position: relative;
+	margin-left: 14px;
+	margin-top: 16px;
+	width: 36px;
+	height: 36px;
+	vertical-align: text-top;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+
+.follow {
+	padding: 0px;
+	float: right;
+	font-size: 16px;
+	color: red;
+}
+
+.header-nikename {
+	font-size: 15px;
+	color: #3d63a1;
+	text-decoration: none;
+}
+
+.header-content {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.header-time {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.header-report {
+	float: right;
+	font-size: 12px;
+}
+
+.like-list {
+	display: inline;
+	margin-top: 10px;
+	padding-left: 0px;
+	list-style: none;
+}
+
+.like-list-li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.like-portait {
+	width: 26px;
+	height: 26px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+}
+
+.like-content {
+	display: inline-block;
+	width: 100%;
+}
+.has-like-button {
+	display: inline;
+	padding: 0px;
+	font-size: 14px;
+}
+
+.like-button {
+	float: right;
+	margin-top: 3px;
+	display: inline;
+	font-size: 13px;
+}
+
+.header-top-hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: 1px solid #e9e9e9;
+}
+
+.comment-all-comment {
+	margin: 0 0 20px 15px;
+	font-size: 14px;
+	font-weight: 400;
+}
