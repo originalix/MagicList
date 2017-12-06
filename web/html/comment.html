@@ -5,83 +5,36 @@
 	<meta charset="UTF-8">
 	<title>8条回复</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
-	<style type="text/css">
-		p {
-			margin: 0;
-			padding: 0;
-		}
-
-		button {
-			margin: 0;
-			padding: 0;
-		}
-
-		#left {
-			float: left;
-			width: 51px;
-			background-color: white;
-		}
-
-		#header-comment {
-			background-color: white;
-			margin-left: 61px;
-			/*==等于左边栏宽度==*/
-			margin-right: 16px;
-		}
-
-		.portait {
-			position: relative;
-			margin-left: 14px;
-			margin-top: 16px;
-			width: 36px;
-			height: 36px;
-			vertical-align: text-top;
-			-webkit-border-radius: 18px;
-			-moz-border-radius: 18px;
-			border-radius: 18px;
-		}
-
-		.follow {
-			float: right;
-			font-size: 16px;
-			color: red;
-
-		}
-
-		.header-nikename {
-			margin-top: 16px;
-			font-size: 15px;
-			color: #3d63a1;
-			text-decoration: none;
-		}
-
-		.header-content {
-			margin-top: 10px;
-			font-size: 16px;
-		}
-
-		.header-time {
-			margin-top: 10px;
-			font-size: 12px;
-		}
-
-		.header-report {
-			float: right;
-			font-size: 12px;
-		}
-	</style>
+	<!-- normailze css -->
+	<link rel="stylesheet" href="../assets/css/normailze.css">
+	
+    <!-- Amaze UI CSS -->
+    <link rel="stylesheet" href="../assets/css/amazeui.css">
+    <link rel="stylesheet" href="../assets/css/amazeui.flat.css"> 
+	<link rel="stylesheet" href="../assets/css/l-comment.css">
 </head>
 
 <body>
-	<div id="left">
-		<img class="portait" src="http://p3.wmpic.me/article/2015/03/16/1426483394_IcLNyyaG.jpeg" alt="" />
-	</div>
-	<div id="header-comment">
-		<a href="#" class="header-nikename">大笑三声50926203</a>
-		<button class="follow">关注</button>
-		<p class="header-content">落选很正常，国内都被冷落一边国外会当回事？</p>
-		<span class="header-time">3小时前</span>
-		<span class="header-report">举报</span>
+	<div class="content">
+		<div id="left">
+			<img class="portait" src="http://p3.wmpic.me/article/2015/03/16/1426483394_IcLNyyaG.jpeg" alt="" />
+		</div>
+		<div id="header-comment">
+			<div class="top-content">
+				<a href="#" class="header-nikename">大笑三声50926203</a>
+				<button class="follow">关注</button>
+				<p class="header-content">落选很正常，国内都被冷落一边国外会当回事？</p>
+				<span class="header-time">3小时前</span>
+				<span class="header-report">举报</span>
+			</div>
+			<div class="like-list">
+				<ul>
+					<li><img class="like-portait" src="http://scimg.jb51.net/touxiang/201709/2017091018241774.jpg" alt=""></li>
+					<li><img src="http://scimg.jb51.net/touxiang/201709/2017091018241774.jpg" alt=""></li>
+					<li><img src="http://scimg.jb51.net/touxiang/201709/2017091018241774.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
 </html>

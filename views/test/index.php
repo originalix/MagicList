@@ -11,7 +11,7 @@
 
     <!-- Amaze UI CSS -->
     <link rel="stylesheet" href="assets/css/amazeui.css">
-    <link rel="stylesheet" href="assets/css/amazeui.flat.css">
+    <link rel="stylesheet" href="assets/css/amazeui.flat.css"> 
     <link rel="stylesheet" href="assets/css/l-index.css">
 </head>
 
