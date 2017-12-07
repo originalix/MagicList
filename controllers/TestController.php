@@ -19,6 +19,10 @@ class TestController extends Controller
         return $this->render('comment');
     }
 
-    
+    public function actionArticle()
+    {
+        $this->layout = false;
+        return $this->render('article');
+    }
 
 }

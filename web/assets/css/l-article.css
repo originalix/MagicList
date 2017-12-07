@@ -52,6 +52,8 @@ button {
 
 .l-description {
     display: inline-block;
+    font-size: 14px;
+    color: #b4b4b4;
 }
 
 .l-main-content {
