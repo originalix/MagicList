@@ -1,3 +1,7 @@
+button {
+    border-width: 0px;
+}
+
 .l-title {
     margin-top: 20px;
     margin-left: 15px;
@@ -45,6 +49,81 @@
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
+
 .l-description {
     display: inline-block;
+}
+
+.l-main-content {
+    margin-top: 28px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 17px;
+    color: #808080;
+}
+
+.content-img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+}
+
+.l-bottomBar { 
+    margin-top: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.l-tag-list {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.l-tag-list-li {
+    display: inline;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 9px;    
+    padding-right: 9px;
+    background-color: #f6f6f6;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+    border-radius: 10px;
+    border-width: 1px solid #ebebeb;
+}
+
+.l-title-like-img {
+    width: 18px;
+    height: 18px; 
+}
+
+.l-title-like-btn {
+    float: right;
+    color: #1e1e1e;
+}
+
+.l-reward-btn-img {
+    width: 20px;
+    height: 20px;
+}
+
+.l-reward-btn {
+    margin-top: 26px;
+    width: 96px;
+    height: 34px;
+    color: #f95959;
+    background-color: white;
+    -webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+    border-radius: 18px;
+    border-width: 1px;
+    border-color: #d7d7d7;
 }
