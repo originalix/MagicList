@@ -58,7 +58,7 @@ button {
     margin-top: 28px;
 }
 
-p {
+.l-main-content p {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 15px;
@@ -78,6 +78,7 @@ p {
     margin-top: 18px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 20px;
 }
 
 .l-tag-list {
@@ -126,4 +127,119 @@ p {
     border-radius: 18px;
     border-width: 1px;
     border-color: #d7d7d7;
+}
+
+.l-reward-list {
+	display: inline;
+	margin-top: 10px;
+	padding-left: 0px;
+	list-style: none;
+}
+
+.l-reward-li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.like-portait {
+	width: 26px;
+	height: 26px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+}
+
+.reward {
+    float: right;
+    margin-top: 26px;
+}
+
+.comment-all-comment {
+	margin: 0 0 0 15px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.l-comment-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.l-comment-list-li {
+}
+
+#comment-li-left {
+	float: left;
+	width: 51px;
+	background-color: white;
+}
+
+#comment-li-right {
+	background-color: ƒ white;
+	margin-left: 61px;
+	/*==等于左边栏宽度==*/
+	margin-right: 16px;
+	padding-top: 16px;
+}
+
+.comment-li-replyBtn {
+	padding: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.like-img {
+	width: 18px;
+	height: 18px;
+}
+
+.fill {
+	height: 20px;
+	width: 100%;
+	background-color:rgba(255, 255, 255, 0);
+}
+
+.portait {
+	position: relative;
+	margin-left: 14px;
+	margin-top: 16px;
+	width: 36px;
+	height: 36px;
+	vertical-align: text-top;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+
+.follow {
+	padding: 0px;
+	float: right;
+	font-size: 16px;
+    color: #9d9ea2;
+    background-color: #ffffff;
+}
+
+.header-report {
+	float: right;
+	font-size: 12px;
+}
+
+.header-content {
+	margin-top: 10px;
+	margin-bottom: 8px;
+	font-size: 16px;
+}
+
+.l-separate {
+    height: 6px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.like-button {
+	float: right;
+	margin-top: 3px;
+	display: inline;
+	font-size: 13px;
 }
