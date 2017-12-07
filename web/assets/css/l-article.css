@@ -44,6 +44,7 @@ button {
     width: 60px;
     height: 30px;
     color: white;
+    font-size: 15px;
     background-color: #f95959;    
     -webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -96,6 +97,7 @@ button {
     padding-bottom: 6px;
     padding-left: 9px;    
     padding-right: 9px;
+    margin-right: 10px;
     background-color: #f6f6f6;
     -webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -123,6 +125,7 @@ button {
     width: 96px;
     height: 34px;
     color: #f95959;
+    font-size: 13px;
     background-color: white;
     -webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
@@ -189,6 +192,8 @@ button {
 	padding: 0;
     font-size: 14px;
     background-color: #ffffff;
+    text-decoration:none; 
+    color:#121212;
 }
 
 .like-img {
