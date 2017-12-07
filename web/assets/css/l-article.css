@@ -1,0 +1,50 @@
+.l-title {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 24px; 
+}
+
+#l-title-left {
+    float: left;
+    width: 52px;
+    background-color: white;
+}
+
+#l-title-right{ 
+    position: relative;
+    margin-left: 62px;
+    margin-right: 15px;
+    background-color: white;
+}
+
+.l-portait {
+    margin-left: 15px;
+    width: 37px;
+    height: 37px;
+    -webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+
+.l-title-nickname {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.l-title-followBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    background-color: #f95959;    
+    -webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.l-description {
+    display: inline-block;
+}
