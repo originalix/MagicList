@@ -6,12 +6,12 @@
 	<title>8条回复</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
 	<!-- normailze css -->
-	<link rel="stylesheet" href="../assets/css/normailze.css">
+	<link rel="stylesheet" href="assets/css/normailze.css">
 
 	<!-- Amaze UI CSS -->
-	<link rel="stylesheet" href="../assets/css/amazeui.css">
-	<link rel="stylesheet" href="../assets/css/amazeui.flat.css">
-	<link rel="stylesheet" href="../assets/css/l-comment.css">
+	<link rel="stylesheet" href="assets/css/amazeui.css">
+	<link rel="stylesheet" href="assets/css/amazeui.flat.css">
+	<link rel="stylesheet" href="assets/css/l-comment.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
 					</li>
 				</ul>
 				<button class="has-like-button">1142人赞过 ></button>
-				<span class="like-button">点赞1142</span>
+				<span class="like-button"><img class="like-img" src="assets/img/like.png" />1142</span>
 			</div>
 		</div>
 		<hr class="header-top-hr">
@@ -57,7 +57,9 @@
 					<div id="comment-li-right">
 						<div class="top-content">
 							<a href="#" class="header-nikename">我是天才</a>
-							<button class="follow">赞</button>
+                            <button class="follow">
+				                <span class="like-button"><img class="like-img" src="assets/img/like.png" />21</span>
+                            </button>
 							<p class="header-content">你们这群喷子都是傻逼</p>
 							<span class="header-time">12:21 •</span>
 							<button class="comment-li-replyBtn">回复</button>
@@ -74,8 +76,10 @@
 					</div>
 					<div id="comment-li-right">
 						<div class="top-content">
-							<a href="#" class="header-nikename">裤裆里藏手榴弹</a>
-							<button class="follow">赞</button>
+                            <a href="#" class="header-nikename">裤裆里藏手榴弹</a>
+                            <button class="follow">
+				                <span class="like-button"><img class="like-img" src="assets/img/like.png" />赞</span>
+                            </button>
 							<p class="header-content">今天不小心和习大大握手了</p>
 							<span class="header-time">3小时前 •</span>
 							<button class="comment-li-replyBtn">回复</button>
@@ -92,8 +96,10 @@
 					</div>
 					<div id="comment-li-right">
 						<div class="top-content">
-							<a href="#" class="header-nikename">老子就是金三胖</a>
-							<button class="follow">赞</button>
+                            <a href="#" class="header-nikename">老子就是金三胖</a>
+                            <button class="follow">
+				                <span class="like-button"><img class="like-img" src="assets/img/like.png" />2150</span>
+                            </button>
 							<p class="header-content">再谈论政治 全部拉出去砍死</p>
 							<span class="header-time">3小时前 •</span>
 							<button class="comment-li-replyBtn">回复</button>
@@ -110,8 +116,10 @@
 					</div>
 					<div id="comment-li-right">
 						<div class="top-content">
-							<a href="#" class="header-nikename">庞海涛</a>
-							<button class="follow">赞</button>
+                            <a href="#" class="header-nikename">庞海涛</a>
+                            <button class="follow">
+				                <span class="like-button"><img class="like-img" src="assets/img/like.png" />1250</span>
+                            </button>
 							<p class="header-content">小姐姐怎么联系//<a href="#">@骨子里的贱气:</a> 有没有需要特殊服务的哥哥。 VX： rkdsssi</p>
 							<span class="header-time">1小时前 •</span>
 							<button class="comment-li-replyBtn">回复</button>
@@ -128,8 +136,10 @@
 					</div>
 					<div id="comment-li-right">
 						<div class="top-content">
-							<a href="#" class="header-nikename">骨子里的贱气</a>
-							<button class="follow">赞</button>
+                            <a href="#" class="header-nikename">骨子里的贱气</a>
+                            <button class="follow">
+				                <span class="like-button"><img class="like-img" src="assets/img/like.png" />1201</span>
+                            </button>
 							<p class="header-content">有没有需要特殊服务的哥哥。 VX： rkdsssi</p>
 							<span class="header-time">3小时前 •</span>
 							<button class="comment-li-replyBtn">回复</button>
@@ -139,8 +149,8 @@
 				</li>
 				<!-- row -->
 
-			</ul>
+            </ul>
+            <div class="fill">
+            </div>
 		</div>
 	</div>
-
-</html>

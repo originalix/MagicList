@@ -1,3 +1,7 @@
+button {
+	border-width: 0px;
+}
+
 #left {
 	float: left;
 	width: 51px;
@@ -28,7 +32,7 @@
 	padding: 0px;
 	float: right;
 	font-size: 16px;
-	color: red;
+	color: #9d9ea2;
 }
 
 .header-nikename {
@@ -128,4 +132,15 @@
 .comment-li-replyBtn {
 	padding: 0;
 	font-size: 14px;
+}
+
+.like-img {
+	width: 18px;
+	height: 18px;
+}
+
+.fill {
+	height: 20px;
+	width: 100%;
+	background-color:rgba(255, 255, 255, 0);
 }

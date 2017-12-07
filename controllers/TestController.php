@@ -12,4 +12,11 @@ class TestController extends Controller
         $this->layout = false;
         return $this->render('index');
     }
+
+    public function actionComment()
+    {
+        $this->layout = false;
+        return $this->render('comment');
+    }
+
 }
