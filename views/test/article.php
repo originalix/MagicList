@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/amazeui.css">
     <link rel="stylesheet" href="assets/css/amazeui.flat.css">
     <link rel="stylesheet" href="assets/css/l-article.css">
+
+    <script src="assets/js/jquery-3.2.1.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,9 @@
         <div class="l-titleBar"></div>
         <h1 class="l-title">鲁能新赛季教练组组建进入尾声 李同国将担任泰山队进攻教练？</h1>
         <div id="l-title-left">
-            <a href="lntsfc://headline/user?id=1"><img class="l-portait" src="http://www.85s.com/wp-content/uploads/2016/08/dmsh6-300x284.jpg" alt=""></a>
+            <a href="lntsfc://headline/user?id=1">
+                <img class="l-portait" src="http://www.duoziwang.com/uploads/1506/1-1506131129590-L.jpg" alt="">
+            </a>
         </div>
         <div id="l-title-right">
             <span class="l-title-nickname">北京晨报</span>
@@ -88,8 +92,9 @@
                         <div class="top-content">
                             <a href="lntsfc://headline/user?id=1" class="header-nikename">我是天才</a>
                             <button class="follow">
-                                    <span class="like-button"><img class="like-img" src="assets/img/like.png" />1201</span>
-                                </button>
+                                <span class="like-button">
+                                    <img class="like-img" src="assets/img/like.png" />1201</span>
+                            </button>
                             <p class="header-content">你们这群喷子都是傻逼</p>
                             <span class="header-time">12:21 •</span>
                             <a class="comment-li-replyBtn" href="lntsfc://headline/comment?id=1">回复</a>
@@ -108,8 +113,9 @@
                         <div class="top-content">
                             <a href="lntsfc://headline/user?id=1" class="header-nikename">裤裆里藏手榴弹</a>
                             <button class="follow">
-                                    <span class="like-button"><img class="like-img" src="assets/img/like.png" />1201</span>
-                                </button>
+                                <span class="like-button">
+                                    <img class="like-img" src="assets/img/like.png" />1201</span>
+                            </button>
                             <p class="header-content">今天不小心和习大大握手了</p>
                             <span class="header-time">3小时前 •</span>
                             <a class="comment-li-replyBtn" href="lntsfc://headline/comment?id=1">回复</a>
@@ -128,8 +134,9 @@
                         <div class="top-content">
                             <a href="lntsfc://headline/user?id=1" class="header-nikename">老子就是金三胖</a>
                             <button class="follow">
-                                    <span class="like-button"><img class="like-img" src="assets/img/like.png" />1201</span>
-                                </button>
+                                <span class="like-button">
+                                    <img class="like-img" src="assets/img/like.png" />1201</span>
+                            </button>
                             <p class="header-content">再谈论政治 全部拉出去砍死</p>
                             <span class="header-time">3小时前 •</span>
                             <a class="comment-li-replyBtn" href="lntsfc://headline/comment?id=1">回复</a>
@@ -149,8 +156,9 @@
                         <div class="top-content">
                             <a href="lntsfc://headline/user?id=1" class="header-nikename">庞海涛</a>
                             <button class="follow">
-                                    <span class="like-button"><img class="like-img" src="assets/img/like.png" />1201</span>
-                                </button>
+                                <span class="like-button">
+                                    <img class="like-img" src="assets/img/like.png" />1201</span>
+                            </button>
                             <p class="header-content">小姐姐怎么联系//
                                 <a href="lntsfc://headline/user?id=1">@骨子里的贱气:</a> 有没有需要特殊服务的哥哥。 VX： rkdsssi</p>
                             <span class="header-time">1小时前 •</span>
@@ -170,8 +178,9 @@
                         <div class="top-content">
                             <a href="lntsfc://headline/user?id=1" class="header-nikename">骨子里的贱气</a>
                             <button class="follow">
-                                    <span class="like-button"><img class="like-img" src="assets/img/like.png" />1201</span>
-                                </button>
+                                <span class="like-button">
+                                    <img class="like-img" src="assets/img/like.png" />1201</span>
+                            </button>
                             <p class="header-content">有没有需要特殊服务的哥哥。 VX： rkdsssi</p>
                             <span class="header-time">3小时前 •</span>
                             <a class="comment-li-replyBtn" href="lntsfc://headline/comment?id=1">回复</a>
@@ -184,6 +193,18 @@
             </ul>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+        });
+
+        function go2List() {
+            var X = $('.l-comment-list').offset().top;
+            var Y = $('.l-comment-list').offset().left;
+            // alert('list X = ' + Y + " Y = " + X);
+            $(document).scrollTop(X); 
+            return true();
+        }
+    </script>
 </body>
 
 </html>
