@@ -20,6 +20,7 @@
 
 <body>
     <div class="content">
+        <a href="lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=1"><h3>lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=1</h3></a>
         <div class="l-titleBar"></div>
         <h1 class="l-title">鲁能新赛季教练组组建进入尾声 李同国将担任泰山队进攻教练？</h1>
         <div id="l-title-left">
@@ -197,7 +198,7 @@
         $(document).ready(function () {
         });
 
-        function go2List() {
+        function go2CommentList() {
             var X = $('.l-comment-list').offset().top;
             var Y = $('.l-comment-list').offset().left;
             // alert('list X = ' + Y + " Y = " + X);

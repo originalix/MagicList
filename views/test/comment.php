@@ -15,7 +15,12 @@
 </head>
 
 <body>
+		<a href="lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=2150"><h3>lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=1</h3></a>
+		<a href="lntsfc://headline/video?link=http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8&id=1202"><h3>lntsfc://headline/video?http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8&id=1202</h3></a>
+		<a href="lntsfc://headline/trend?link=http://192.168.0.106/list/web/index.php?r=test/article&id=2121"><h3>lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=1</h3></a>
+		<a href="lntsfc://headline/commentlist?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=2150"><h3>lntsfc://headline/commentlist?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=2150</h3></a>
 	<div class="content">
+
 		<div id="left">
 			<img class="portait" src="http://p3.wmpic.me/article/2015/03/16/1426483394_IcLNyyaG.jpeg" alt="" />
 		</div>
