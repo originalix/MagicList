@@ -20,7 +20,7 @@
 
 <body>
     <div class="content">
-        <a href="lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=1"><h3>lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=1</h3></a>
+        <!-- <a href="lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=1"><h3>lntsfc://headline/article?link=http://192.168.0.106/list/web/index.php?r=test/comment&id=1</h3></a> -->
         <div class="l-titleBar"></div>
         <h1 class="l-title">鲁能新赛季教练组组建进入尾声 李同国将担任泰山队进攻教练？</h1>
         <div id="l-title-left">
@@ -197,7 +197,7 @@
     <script>
         $(document).ready(function () {
             var body = {
-                'count' = 100;
+                'count' : 100,
             };
             if (!window.webkit || !window.webkit.messageHandlers || !window.webkit.messageHandlers.request) {
                 alert("no js bridge");
@@ -208,6 +208,15 @@
         });
 
         function go2CommentList() {
+            var body = {
+                'count' : "1.4万",
+            };
+            if (!window.webkit || !window.webkit.messageHandlers || !window.webkit.messageHandlers.commentcount) {
+                alert("no js bridge");
+                return;
+            }
+            var bridge = window.webkit.messageHandlers.commentcount;
+            bridge.postMessage(body);
             var X = $('.l-comment-list').offset().top;
             var Y = $('.l-comment-list').offset().left;
             // alert('list X = ' + Y + " Y = " + X);
