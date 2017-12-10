@@ -82,7 +82,7 @@
             </div>
         </div>
         <hr class="l-separate">
-        <div class="comment-content">
+        <div class="comment-content" id="comment-list-content">
             <ul class="l-comment-list">
                 <!-- row -->
                 <li class="l-comment-list-li">
@@ -196,15 +196,15 @@
     </div>
     <script>
         $(document).ready(function () {
-            var body = {
-                'count' : "1.4万",
-            };
-            if (!window.webkit || !window.webkit.messageHandlers || !window.webkit.messageHandlers.request) {
-                alert("no js bridge");
-                return;
-            }
-            var bridge = window.webkit.messageHandlers.commentcount;
-            bridge.postMessage(body);
+            // var body = {
+            //     'count' : "1.4万",
+            // };
+            // if (!window.webkit || !window.webkit.messageHandlers || !window.webkit.messageHandlers.request) {
+            //     alert("no js bridge");
+            //     return;
+            // }
+            // var bridge = window.webkit.messageHandlers.commentcount;
+            // bridge.postMessage(body);
         });
 
         function go2CommentList() {
@@ -217,6 +217,11 @@
 
         function getCommentCount() {
             return "1.1万";
+        }
+
+        function refreshComment(content){
+            console.log(content);
+            // $("#comment-list-content ul").append("<li class='l-comment-list-li'> <div id='comment-li-left'> <img class='portait' src='http://www.qqcba.com/d/file/touxiang/qinglv/20170926/3188d746bf5903a46e8da3f1606692a7.jpg' alt='' /> </div> <div id='comment-li-right'> <div class='top-content'> <a href='lntsfc://headline/user?id=1' class='header-nikename'>庞海涛</a> <button class='follow'> <span class='like-button'> <img class='like-img' src='assets/img/like.png' />1201</span> </button> <p class='header-content'>"+ content + "</p> <span class='header-time'>1小时前 •</span> <a class='comment-li-replyBtn' href='lntsfc://headline/comment?id=1'>回复</a> <span class='header-report'>举报</span> </div> </div> </li>");
         }
     </script>
 </body>
