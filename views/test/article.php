@@ -196,6 +196,15 @@
     </div>
     <script>
         $(document).ready(function () {
+            var body = {
+                'count' = 100;
+            };
+            if (!window.webkit || !window.webkit.messageHandlers || !window.webkit.messageHandlers.request) {
+                alert("no js bridge");
+                return;
+            }
+            var bridge = window.webkit.messageHandlers.commentcount;
+            bridge.postMessage(body);
         });
 
         function go2CommentList() {
