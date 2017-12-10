@@ -197,7 +197,7 @@
     <script>
         $(document).ready(function () {
             var body = {
-                'count' : 100,
+                'count' : "1.4万",
             };
             if (!window.webkit || !window.webkit.messageHandlers || !window.webkit.messageHandlers.request) {
                 alert("no js bridge");
@@ -208,20 +208,15 @@
         });
 
         function go2CommentList() {
-            var body = {
-                'count' : "1.4万",
-            };
-            if (!window.webkit || !window.webkit.messageHandlers || !window.webkit.messageHandlers.commentcount) {
-                alert("no js bridge");
-                return;
-            }
-            var bridge = window.webkit.messageHandlers.commentcount;
-            bridge.postMessage(body);
             var X = $('.l-comment-list').offset().top;
             var Y = $('.l-comment-list').offset().left;
             // alert('list X = ' + Y + " Y = " + X);
             $(document).scrollTop(X); 
             return true();
+        }
+
+        function getCommentCount() {
+            return "1.1万";
         }
     </script>
 </body>
