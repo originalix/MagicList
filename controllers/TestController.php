@@ -13,16 +13,8 @@ class TestController extends Controller
         return $this->render('index');
     }
 
-    public function actionComment()
-    {
-        $this->layout = false;
-        return $this->render('comment');
-    }
-
-    public function actionArticle()
-    {
-        $this->layout = false;
-        return $this->render('article');
-    }
-
+    /**
+     * ui page: http://www.ui.cn/detail/157232.html
+     * html 规范: https://coderlmn.github.io/code-standards/
+     */
 }
