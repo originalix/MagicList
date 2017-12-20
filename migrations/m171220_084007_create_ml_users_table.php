@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `users`.
+ * Handles the creation of table `ml_users`.
  */
-class m171220_081559_create_users_table extends Migration
+class m171220_084007_create_ml_users_table extends Migration
 {
     /**
      * @inheritdoc
      */
     public function safeUp()
     {
-        $this->createTable('users', [
+        $this->createTable('ml_users', [
             'id' => $this->primaryKey(),
             'username' => $this->string()->notNull(),
             'password' => $this->string()->notNull(),
@@ -28,6 +28,6 @@ class m171220_081559_create_users_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('users');
+        $this->dropTable('ml_users');
     }
 }
