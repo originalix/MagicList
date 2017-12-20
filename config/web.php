@@ -51,6 +51,7 @@ $config = [
         ],
     ],
     'params' => $params,
+    'defaultRoute' => 'sites/index'
 ];
 
 if (YII_ENV_DEV) {
