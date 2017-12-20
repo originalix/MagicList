@@ -49,6 +49,10 @@ $config = [
             'showScriptName' => false,
             'rules' => require(__DIR__ . '/restful.php'),
         ],
+        'user' => [
+            'identityClass' => 'app\models\User',
+            'enableAutoLogin' => true,
+        ]
     ],
     'params' => $params,
     'defaultRoute' => 'sites/index'
