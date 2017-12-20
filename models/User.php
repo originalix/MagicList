@@ -34,7 +34,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
         return [
             [['username', 'password'], 'required'],
             [['created_time', 'updated_time'], 'safe'],
-            [['username', 'password', 'access_token', 'qq_account'], 'string', 'max' => 255],
+            [['username', 'password', 'authKey', 'qq_account'], 'string', 'max' => 255],
         ];
     }
 
@@ -60,12 +60,12 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
 
     public function getAuthKey()
     {
-        return $this->access_token;
+        return $this->authKey;
     }
 
-    public function validateAuthKey($access_token)
+    public function validateAuthKey($authKey)
     {
-        return $this->getAccessToken() === $access_token;
+        return $this->getAuthKey() === $authKey;
     }
 
     /**
@@ -77,7 +77,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
             'id' => 'ID',
             'username' => '用户名',
             'password' => '密码',
-            'access_token' => '登录令牌',
+            'authKey' => '登录令牌',
             'qq_account' => 'qq账号',
             'created_time' => '创建时间',
             'updated_time' => '更新时间',

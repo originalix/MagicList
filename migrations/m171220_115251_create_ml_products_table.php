@@ -19,8 +19,8 @@ class m171220_115251_create_ml_products_table extends Migration
             'price' => $this->double()->notNull()->defaultValue(0.0)->comment('单价'),
             'count' => $this->integer()->notNull()->defaultValue(0)->comment('购买数量'),
             'finish' => $this->boolean()->notNull()->defaultValue(false)->comment('是否完成采购'),
-            'created_time' => $this->dateTime()->comment('创建时间'),
-            'updated_time' => $this->dateTime()->comment('更新时间'),
+            'created_at' => $this->dateTime()->comment('创建时间'),
+            'updated_at' => $this->dateTime()->comment('更新时间'),
         ]);
     }
 
