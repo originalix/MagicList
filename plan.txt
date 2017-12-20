@@ -1,0 +1,16 @@
+功能：QQ登录
+清单列表
+
+类目 -> 详细清单
+
+用户结构
+id, name, password, access_token, qq, created_time, updated_time
+id, 用户名, 密码, 登录令牌, qq, 创建时间, 更新时间
+
+类目数据结构
+id, uid, name, type_id, total_up, created_time, updated_time
+id, 用户id, 类目名称, 类型id, 清单总金额, 创建时间, 更新时间
+
+清单结构
+id, category_id, name, price, count, finish, created_time, updated_time
+id, 类目id, 名称, 单价, 数量, 是否完成目标, 创建时间, 更新时间
