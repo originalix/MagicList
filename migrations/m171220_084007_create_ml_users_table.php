@@ -27,6 +27,8 @@ class m171220_084007_create_ml_users_table extends Migration
             'password' => '123',
             'authKey' => '',
             'qq_account' => '',
+            'created_at' => date('Y-m-d H:i:s', time()),
+            'updated_at' => date('Y-m-d H:i:s', time()),
         ]);
     }
 
