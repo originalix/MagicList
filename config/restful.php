@@ -1,7 +1,7 @@
 <?php
 
 return [
-    // 全局
+    //全局
     'PUT,PATCH /<controller:\w+>s/<id:\d+>' => '/<controller>/update',
     'DELETE /<controller:\w+>s/<id:\d+>' => '/<controller>/delete',
     'GET,HEAD /<controller:\w+>s/<id:\d+>' => '/<controller>/view',
