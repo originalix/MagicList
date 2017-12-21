@@ -1,6 +1,6 @@
-html {
-    font-size: 200px;
-}
+/* css */
+html {font-size: 100px;}
+
 
 .box {
     position: relative;
@@ -17,7 +17,7 @@ html {
     right: 0;
     left: 0;
     z-index: 10;
-    /* height: 1rem; */
+    height: 0.88rem;
     padding-right: 0.1rem;
     padding-left: 0.1rem;
     background-color: #f5f5f5;
@@ -31,8 +31,14 @@ html {
 }
 
 .home-index-portrait {
-    height: 0.5rem;
-    width: 0.5rem;    
+    position: relative;
+    margin-top: 0.1rem;
+    height: 0.7rem;
+    width: 0.7rem;    
+}
+
+.home-index-main {
+    display: flex;
 }
 
 .test {
