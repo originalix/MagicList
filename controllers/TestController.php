@@ -23,6 +23,12 @@ class TestController extends Controller
         ];
     }
 
+    public function actionRem()
+    {
+        $this->layout = false;
+        return $this->render('rem');
+    }
+
     /**
      * ui page: http://www.ui.cn/detail/157232.html
      * html 规范: https://coderlmn.github.io/code-standards/
