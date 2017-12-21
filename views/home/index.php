@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <section class="home-index box">
+    <section class="home-index">
         <header class="home-index-bar home-index-bar-nav">
             <img class="home-index-portrait" src="http://cms-bucket.nosdn.127.net/e76028c29cb64592868934c3b2e69f7720170516111348.jpeg?imageView&thumbnail=550x0" alt="">
             <span class="home-header-username">username</span>
