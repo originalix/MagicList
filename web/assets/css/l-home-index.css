@@ -43,7 +43,17 @@ html {font-size: 100px;}
     top: 50%;
     left: 0.7rem;
     transform: translateY(-50%);
-    font-size: 40px;
+    font-size: 0.24rem;
+}
+
+.home-down-arrow {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 1.8rem;
+    transform: translateY(-50%);
+    /* font-size: 0.7rem;  */
+    font-size: 100px;
 }
 
 .home-index-main {
