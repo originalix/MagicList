@@ -1,0 +1,45 @@
+html {
+    font-size: 200px;
+}
+
+.box {
+    position: relative;
+    max-width: 10rem;
+    margin: 0 auto;
+}
+
+.home-index {
+
+}
+
+.home-index-bar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    /* height: 1rem; */
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    background-color: #f5f5f5;
+    border-bottom: 0.01rem solid #dddddd;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.home-index-bar-nav { 
+    top: 0; 
+}
+
+.home-index-portrait {
+    height: 0.5rem;
+    width: 0.5rem;    
+}
+
+.test {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    height: 1rem;
+    width: 1rem;
+    font-size: 12px;
+}
