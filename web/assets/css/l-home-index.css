@@ -7,7 +7,11 @@ html {font-size: 100px;}
     margin: 0 auto;
 }
 
-.home-index {
+.ml-body {
+    margin: 0;
+}
+
+.home-container {
 
 }
 
@@ -31,22 +35,28 @@ html {font-size: 100px;}
 
 .home-index-portrait {
     position: absolute;
-    margin: 0 auto;
+    top: 50%;
+    left: 0.15rem;
+    transform: translateY(-50%);
     height: 0.5rem;
     width: 0.5rem;
+    -webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	border-radius: 0.25rem;
 }
 
 .home-header-username {
-    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0.7rem;
+    transform: translateY(-50%);
+    font-size: 0.23rem;
 }
 
-
-
-.home-index-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0.9rem;
+.home-downarrow {
+    position: absolute;
+    top: 50%;
+    left: 1.8rem;
+    transform: translateY(-50%);
+    font-size: 0.2rem;
 }

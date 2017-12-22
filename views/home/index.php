@@ -13,14 +13,25 @@
     <!-- normailze css -->
     <link rel="stylesheet" href="assets/css/normailze.css" />
 
-    <link rel="stylesheet" href="assets/css/l-home-index.css">
     <!-- icon-font -->
     <link rel="stylesheet" href="assets/css/iconfont.css">
+    
+    <link rel="stylesheet" href="assets/css/l-home-index.css">
 
 </head>
 
-<body>
-    <section class="home-index box">
+<body class="ml-body">
+    <div class="home-container">
+        <header class="home-index-bar">
+            <div class="header-left">
+                <img src="http://cms-bucket.nosdn.127.net/e76028c29cb64592868934c3b2e69f7720170516111348.jpeg?imageView&thumbnail=550x0" alt="" class="home-index-portrait">
+                <span class="home-header-username">Originalee</span>
+                <i class="home-downarrow iconfont">&#xe62d;</i>
+            </div>
+        </header>
+    </div>
+
+    <!-- <section class="home-index box">
         <header class="home-index-bar home-index-bar-nav">
             <img class="home-index-portrait" src="http://cms-bucket.nosdn.127.net/e76028c29cb64592868934c3b2e69f7720170516111348.jpeg?imageView&thumbnail=550x0" alt="">
             <span class="home-header-username">username</span>
@@ -29,7 +40,7 @@
         <div class="home-index-main">
 
         </div>
-    </section>
+    </section> -->
 </body>
 
 </html>
