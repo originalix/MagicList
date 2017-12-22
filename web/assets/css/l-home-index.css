@@ -1,3 +1,4 @@
+/* 全局样式 */
 html {font-size: 100px;}
 
 .ml-body {
@@ -8,6 +9,7 @@ html {font-size: 100px;}
 .home-container {
 }
 
+/* 导航栏样式 START */
 .home-index-bar {
     position: fixed;
     right: 0;
@@ -56,18 +58,26 @@ html {font-size: 100px;}
     margin-right: 0.4rem;
     font-size: 0.59rem;
 }
+/* 导航栏样式 END */
 
+/* Content 样式 START */
 .home-main {
     position: relative;
     margin-top: 0.9rem;
     padding-top: 1px;
 }
 
+.home-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .list-content {
     margin-top: 0.27rem;
     margin-left: 0.15rem;
-    width: 3.34rem;
-    height: 3.51rem;
+    width: 47%;
+    height: 3.34rem;
     background-color: #493a6c;
     -webkit-border-radius: 0.6rem;
     -moz-border-radius: 0.6rem;
@@ -77,4 +87,29 @@ html {font-size: 100px;}
 .list-icon {
     color: #ffffff;
     font-size: 1.47rem;
+}
+
+.list-icon-block {
+    position: relative;
+    top: 0.57rem;
+    padding-bottom: 0.15rem;
+    width: 100%;
+    text-align: center;
+}
+
+.list-title {
+    position: relative;
+    /* margin-top: 0.3rem; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 0.35rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.list-title-block {
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
