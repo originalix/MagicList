@@ -93,6 +93,11 @@ html {font-size: 100px;}
     margin-left: 0.15rem;
 }
 
+.list-content {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
 .content-icon {
     font-size: 0.9rem;
 }
