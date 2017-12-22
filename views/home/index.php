@@ -23,20 +23,14 @@
 <body class="ml-body">
     <div class="home-container">
         <header class="home-index-bar home-index-bar-nav">
-            <div class="header-left">
-                <img src="http://cms-bucket.nosdn.127.net/e76028c29cb64592868934c3b2e69f7720170516111348.jpeg?imageView&thumbnail=550x0" alt="" class="home-index-portrait">
-                <span class="home-header-username">Originalee</span>
-                <i class="home-downarrow iconfont">&#xe62d;</i>
+            <div class="header-content">
+                <i class="home-calendar iconfont">&#xe69d;</i>
+                <div class="home-title">Remember Me</div>
+                <i class="home-setting iconfont">&#xe600;</i>
             </div>
-            <div class="home-title">Remember Me</div>
         </header>
 
         <div class="home-main">
-            <div class="listLabel"><p>My Lists</p></div>
-
-            <div class="list-content">
-                <i class="content-icon iconfont">&#xe60b;</i>
-            </div>
         </div>
     </div>
 </body>
