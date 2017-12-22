@@ -39,7 +39,7 @@ html {font-size: 100px;}
     transform:translateY(-50%);
     width: 73.333333%;
     text-align: center;
-    font-size: 0.4rem;
+    font-size: 0.27rem;
     color: #666666;
 }
 
@@ -60,26 +60,21 @@ html {font-size: 100px;}
 .home-main {
     position: relative;
     margin-top: 0.9rem;
-    padding-top: 0.15rem;
-}
-
-.listLabel p{
-    margin: 0;
-    padding: 0;
-    font-size: 0.8rem;
-    font-variant: normal;
-}
-
-.listLabel {
-    position: relative;
-    margin-left: 0.15rem;
+    padding-top: 1px;
 }
 
 .list-content {
-    width: 2.4rem;
-    height: 2.4rem;
+    margin-top: 0.27rem;
+    margin-left: 0.15rem;
+    width: 3.34rem;
+    height: 3.51rem;
+    background-color: #493a6c;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    border-radius: 0.6rem;
 }
 
-.content-icon {
-    font-size: 0.9rem;
+.list-icon {
+    color: #ffffff;
+    font-size: 1.47rem;
 }

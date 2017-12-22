@@ -31,6 +31,9 @@
         </header>
 
         <div class="home-main">
+            <div class="list-content">
+                <i class="list-icon iconfont">&#xe60a;</i>
+            </div>
         </div>
     </div>
 </body>
