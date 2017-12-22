@@ -30,6 +30,14 @@
             </div>
             <div class="home-title">Remember Me</div>
         </header>
+
+        <div class="home-main">
+            <div class="listLabel"><p>My Lists</p></div>
+
+            <div class="list-content">
+                <i class="content-icon iconfont">&#xe60b;</i>
+            </div>
+        </div>
     </div>
 </body>
 
