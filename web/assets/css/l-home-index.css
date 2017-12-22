@@ -1,11 +1,11 @@
 /* css */
 html {font-size: 100px;}
 
-.box {
+/* .box {
     position: relative;
     max-width: 10rem;
     margin: 0 auto;
-}
+} */
 
 .ml-body {
     margin: 0;
@@ -13,7 +13,7 @@ html {font-size: 100px;}
 
 .home-container {
 
-}
+} */
 
 .home-index-bar {
     position: fixed;
@@ -21,8 +21,7 @@ html {font-size: 100px;}
     left: 0;
     z-index: 10;
     height: 0.9rem;
-    /* padding-right: 0.1rem;
-    padding-left: 0.1rem; */
+    padding-left: 0.15rem;
     background-color: #f5f5f5;
     border-bottom: 0.01rem solid #dddddd;
     -webkit-backface-visibility: hidden;
@@ -34,6 +33,7 @@ html {font-size: 100px;}
 }
 
 .home-index-portrait {
+    display: inline;
     position: absolute;
     top: 50%;
     left: 0.15rem;
