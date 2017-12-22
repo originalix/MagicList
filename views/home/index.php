@@ -22,25 +22,15 @@
 
 <body class="ml-body">
     <div class="home-container">
-        <header class="home-index-bar">
+        <header class="home-index-bar home-index-bar-nav">
             <div class="header-left">
                 <img src="http://cms-bucket.nosdn.127.net/e76028c29cb64592868934c3b2e69f7720170516111348.jpeg?imageView&thumbnail=550x0" alt="" class="home-index-portrait">
                 <span class="home-header-username">Originalee</span>
                 <i class="home-downarrow iconfont">&#xe62d;</i>
             </div>
+            <div class="home-title">Remember Me</div>
         </header>
     </div>
-
-    <!-- <section class="home-index box">
-        <header class="home-index-bar home-index-bar-nav">
-            <img class="home-index-portrait" src="http://cms-bucket.nosdn.127.net/e76028c29cb64592868934c3b2e69f7720170516111348.jpeg?imageView&thumbnail=550x0" alt="">
-            <span class="home-header-username">username</span>
-            <i class="iconfont home-down-arrow">&#xe62d;</i>
-        </header>
-        <div class="home-index-main">
-
-        </div>
-    </section> -->
 </body>
 
 </html>
