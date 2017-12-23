@@ -7,36 +7,36 @@ var Home = {
             {
                 // 家电
                 case 1:
-                    changeListStyle(id, "green", "&#xe62a;");
+                    changeListStyle(id, "#493a6c", "&#xe64f;");
                     break;
 
                 // 硬装
                 case 2:
-                    changeListStyle(id, "green", "&#xe62a;");
+                    changeListStyle(id, "#493a6c", "&#xe606;");
                 break;
 
                 // 软装
                 case 3:
-                    changeListStyle(id, "green", "&#xe62a;");
+                    changeListStyle(id, "#493a6c", "&#xe650;");
                     break;
 
                 // 数码
                 case 4:
-                    changeListStyle(id, "green", "&#xe62a;");
+                    changeListStyle(id, "#493a6c", "&#xe62b;");
                     break;
 
                 // 显示器
                 case 5:
-                    changeListStyle(id, "green", "&#xe62a;");
+                    changeListStyle(id, "#493a6c", "&#xe63e;");
                     break;
 
                 // 机械键盘
                 case 6:
-                    changeListStyle(id, "green", "&#xe62a;");
+                    changeListStyle(id, "#493a6c", "&#xe63f;");
                     break;
 
                 default:
-                    changeListStyle(id, "gray", "&#xe61e;");
+                    changeListStyle(id, "#493a6c", "&#xe61e;");
                     break;
             }
         }
