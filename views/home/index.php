@@ -36,7 +36,7 @@
                 <!-- 循环展示清单类目列表 -->
                 <?php foreach( $categories as $category ): ?>
                     <!-- row -->
-                    <div class="list-content">
+                    <div class="list-content" id=<?php echo("list-content" . "$category->id"); ?>>
                         <div class="list-icon-block">
                             <i class="list-icon iconfont">&#xe60a;</i>
                         </div>
@@ -52,8 +52,22 @@
         </div>
     </div>
 </body>
+
 <script src="assets/js/jquery-3.2.1.js"></script>
 <script>
-    
+
+    function changeIcon(id, typeid)
+    {
+        console.log(typeid);
+        $("#list-content" + id).addClass("1111111"); 
+        return typeid;
+    }
+
+    <?php foreach ($categories as $category) : ?>
+        var typeid = <?php echo $category->type_id; ?>;
+        var id = <?php echo $category->id; ?>;
+        changeIcon(id, typeid);
+    <?php endforeach; ?>
 </script>
+
 </html>
