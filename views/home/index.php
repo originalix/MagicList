@@ -58,8 +58,13 @@
 
     function changeIcon(id, typeid)
     {
-        console.log(typeid);
+        // console.log(typeid);
         $("#list-content" + id).addClass("1111111"); 
+        var val = $("#list-content" + id).css("background-color", "green");
+        console.log(val);
+
+        var val1 = $("#list-content" + id).find("i").html('&#xe62a;');
+        console.log(val1);
         return typeid;
     }
 
