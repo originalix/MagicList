@@ -32,22 +32,28 @@
 
         <div class="home-main">
             <div class="home-list">
-                
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
+
+                <!-- 循环展示清单类目列表 -->
+                <?php foreach( $categories as $category ): ?>
+                    <!-- row -->
+                    <div class="list-content">
+                        <div class="list-icon-block">
+                            <i class="list-icon iconfont">&#xe60a;</i>
+                        </div>
+                        <div class="list-title-block">
+                            <span class="list-title">
+                                <?php echo($category->name); ?>
+                            </span>
+                        </div>
                     </div>
-                    <div class="list-title-block">
-                        <span class="list-title">
-                            <?php echo($categories[0]->name); ?>
-                        </span>
-                    </div>
-                </div>
+                <?php endforeach; ?>
 
             </div>
         </div>
     </div>
 </body>
-
+<script src="assets/js/jquery-3.2.1.js"></script>
+<script>
+    
+</script>
 </html>
