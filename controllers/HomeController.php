@@ -5,6 +5,7 @@ namespace app\controllers;
 use Yii;
 use yii\web\Response;
 use app\models\User;
+use app\models\Categories;
 use yii\filters\auth\QueryParamAuth;
 
 class HomeController extends BaseController
@@ -22,6 +23,7 @@ class HomeController extends BaseController
     public function actionIndex()
     {
         $this->layout = false;
-        return $this->render('index');
+        $models = Categories::find()->where(['uid' => Yii::$app->user->id])->orderBy('created_at')->all();
+        return $this->render('index', ['categories' => $models]);
     }
 }

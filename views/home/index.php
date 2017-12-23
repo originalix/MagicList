@@ -32,36 +32,6 @@
 
         <div class="home-main">
             <div class="home-list">
-
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-    
-                <!-- row  -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-    
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
                 
                 <!-- row -->
                 <div class="list-content">
@@ -69,80 +39,12 @@
                         <i class="list-icon iconfont">&#xe60a;</i>
                     </div>
                     <div class="list-title-block">
-                        <span class="list-title">Health</span>
+                        <span class="list-title">
+                            <?php echo($categories[0]->name); ?>
+                        </span>
                     </div>
                 </div>
 
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-
-                <!-- row -->
-                <div class="list-content">
-                    <div class="list-icon-block">
-                        <i class="list-icon iconfont">&#xe60a;</i>
-                    </div>
-                    <div class="list-title-block">
-                        <span class="list-title">Health</span>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </div>
