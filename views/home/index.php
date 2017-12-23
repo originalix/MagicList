@@ -54,16 +54,19 @@
 </body>
 
 <script src="assets/js/jquery-3.2.1.js"></script>
+<script src="assets/js/home.js"></script>
+
 <script>
 
+    var home = Home.createNew();
+    home.switchIcon();
+    
     function changeIcon(id, typeid)
     {
         // console.log(typeid);
         var val = $("#list-content" + id).css("background-color", "green");
-        console.log(val);
 
         var val1 = $("#list-content" + id).find("i").html('&#xe62a;');
-        console.log(val1);
 
         $(".list-content").removeClass('hide');
 
