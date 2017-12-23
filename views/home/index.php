@@ -60,16 +60,9 @@
 
     function changeIcon(id, typeid)
     {
-        // console.log(typeid);
-        // var val = $("#list-content" + id).css("background-color", "green");
-
-        // var val1 = $("#list-content" + id).find("i").html('&#xe62a;');
-
         var home = Home.createNew();
         home.switchIcon(id, typeid);    
         $(".list-content").removeClass('hide');
-
-        return typeid;
     }
 
     <?php foreach ($categories as $category) : ?>
