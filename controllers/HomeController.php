@@ -3,11 +3,10 @@
 namespace app\controllers;
 
 use Yii;
-use yii\web\Controller;
 use yii\web\Response;
 use app\models\User;
 
-class HomeController extends Controller
+class HomeController extends BaseController
 {
     public function actionIndex()
     {
