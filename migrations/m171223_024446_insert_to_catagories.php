@@ -3,24 +3,15 @@
 use yii\db\Migration;
 
 /**
- * Class m171223_022312_insert_to_catagories
+ * Class m171223_024446_insert_to_catagories
  */
-class m171223_022312_insert_to_catagories extends Migration
+class m171223_024446_insert_to_catagories extends Migration
 {
     /**
      * @inheritdoc
      */
     public function safeUp()
     {
-        $this->insert('ml_categories', [
-            'uid' => 1,
-            'name' => '家电',
-            'type_id' => 1,
-            'total_up' => 2150,
-            'created_at' => date('Y-m-d H:i:s', time()),
-            'updated_at' => date('Y-m-d H:i:s', time()),
-        ]);
-
         $this->insert('ml_categories', [
             'uid' => 1,
             'name' => '硬装',
@@ -72,7 +63,7 @@ class m171223_022312_insert_to_catagories extends Migration
      */
     public function safeDown()
     {
-        echo "m171223_022312_insert_to_catagories cannot be reverted.\n";
+        echo "m171223_024446_insert_to_catagories cannot be reverted.\n";
 
         return false;
     }
@@ -86,7 +77,7 @@ class m171223_022312_insert_to_catagories extends Migration
 
     public function down()
     {
-        echo "m171223_022312_insert_to_catagories cannot be reverted.\n";
+        echo "m171223_024446_insert_to_catagories cannot be reverted.\n";
 
         return false;
     }
