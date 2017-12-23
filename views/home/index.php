@@ -36,9 +36,9 @@
                 <!-- 循环展示清单类目列表 -->
                 <?php foreach( $categories as $category ): ?>
                     <!-- row -->
-                    <div class="list-content" id=<?php echo("list-content" . "$category->id"); ?>>
+                    <div class="list-content hide" id=<?php echo("list-content" . "$category->id"); ?>>
                         <div class="list-icon-block">
-                            <i class="list-icon iconfont">&#xe60a;</i>
+                            <i class="list-icon iconfont"></i>
                         </div>
                         <div class="list-title-block">
                             <span class="list-title">
@@ -59,12 +59,14 @@
     function changeIcon(id, typeid)
     {
         // console.log(typeid);
-        $("#list-content" + id).addClass("1111111"); 
         var val = $("#list-content" + id).css("background-color", "green");
         console.log(val);
 
         var val1 = $("#list-content" + id).find("i").html('&#xe62a;');
         console.log(val1);
+
+        $(".list-content").removeClass('hide');
+
         return typeid;
     }
 
