@@ -45,7 +45,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
 
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        throw new NotSupportedException("findIdentityByAccessToken is not implemented.");
+        return static::findOne(['authKey' => $token]);
     }
 
     public static function findByUsername($username)
