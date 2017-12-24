@@ -1,3 +1,9 @@
+<?php 
+    use yii\bootstrap\ActiveForm;
+    use yii\helpers\Html;
+    use app\models\Products;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +22,7 @@
     <!-- icon-font -->
     <link rel="stylesheet" href="assets/css/iconfont.css">
     <link rel="stylesheet" href="assets/css/l-header.css">
+    <link rel="stylesheet" href="assets/css/l-category.css">
 
 </head>
 
@@ -29,8 +36,43 @@
             </div>
         </header>
 
-        <div class="home-main">
-        
+        <div class="category-main">
+            <div class="category-list">
+
+                <!-- row -->
+                <div class="list-content hide">
+                        <a href="#" class="list-link">
+                            <div class="list-icon-block">
+                                <i class="list-icon iconfont">&#xe703;</i>
+                            </div>
+                            <div class="list-title-block">
+                                <span class="list-title">
+                                    Write your own
+                                </span>
+                            </div>
+                        </a>
+                </div>
+
+                <!-- row -->
+                <div class="list-content hide">
+                        <a href="#" class="list-link">
+                            <div class="list-icon-block">
+                                <i class="list-icon iconfont">&#xe703;</i>
+                            </div>
+                            
+                            <?= Html::beginForm(['order/update'], 'post', ['enctype' => 'multipart/form-data']) ?>
+
+                            <?= Html::input('text', 'username') ?>
+
+                            <?= Html::endForm() ?>
+
+                            <!-- <form action="">
+                            <input type="text" name="firstname" class="category-input">
+                            </form> -->
+                        </a>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>
