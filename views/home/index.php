@@ -37,14 +37,16 @@
                 <?php foreach( $categories as $category ): ?>
                     <!-- row -->
                     <div class="list-content hide" id=<?php echo("list-content" . "$category->id"); ?>>
-                        <div class="list-icon-block">
-                            <i class="list-icon iconfont"></i>
-                        </div>
-                        <div class="list-title-block">
-                            <span class="list-title">
-                                <?php echo($category->name); ?>
-                            </span>
-                        </div>
+                        <a href="/sites" class="list-link">
+                            <div class="list-icon-block">
+                                <i class="list-icon iconfont"></i>
+                            </div>
+                            <div class="list-title-block">
+                                <span class="list-title">
+                                    <?php echo($category->name); ?>
+                                </span>
+                            </div>
+                        </a>
                     </div>
                 <?php endforeach; ?>
 

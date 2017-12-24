@@ -2,6 +2,11 @@ var Home = {
     createNew: function() {
         var home = {};
 
+        /**
+         * 根据categories表的id 以及typeid，改变列表图标和背景色
+         * @param {*} id    主键id 
+         * @param {*} typeId    类型id
+         */
         home.switchIcon = function(id, typeId) {
             switch (typeId)
             {
