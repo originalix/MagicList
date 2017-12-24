@@ -91,14 +91,28 @@
 /* 新增物品表单样式 */
 .add-form {
     position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 .category-input {
     position: relative;
-    margin-left: 0.44rem;
+    float: left;
+    display: inline-block;
+    /* margin-top: 0.26rem;
+    margin-left: 0.44rem; */
+    width: 80%;
     background-color: rgba(255, 255, 255, 1);
     border-color: rgba(0, 0, 0, 1);
-    color: #ffffff;
+    color: #000000;
     font-size: 0.33rem;
+}
+
+.form-edit-icon {
+    float: left;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.2rem;
 }
 

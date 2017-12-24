@@ -64,7 +64,10 @@
                             </div>
                             <div class="add-form">
                                 <form id="form" method="post">
+                                    <i class="form-edit-icon iconfont">&#xe625;</i>
                                     <input type="text" name="name" id="name" class="category-input">
+                                    <!-- <input type="text" name="name" id="name" class="category-input">
+                                    <input type="text" name="name" id="name" class="category-input"> -->
                                 </form>
                             </div>
                             <button onclick="getName()">点我点我</button>
