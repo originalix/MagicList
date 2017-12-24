@@ -39,6 +39,34 @@
     text-align: center;
 }
 
+.list-icon-edit-block {
+    
+    position: relative;
+    display: block;
+    top: 0.32rem;
+    margin-left: 0.21rem;
+    margin-right: 0.21rem;
+    height: 0.48rem;
+}
+
+.list-left-icon {
+    float: left;
+    margin-top: 0.03rem;
+    width: 0.45rem;
+    height: 100%;
+    color: #ffffff;
+    font-size: 0.45rem;
+}
+
+.list-right-icon {
+    float: right;
+    width: 0.48rem;
+    height: 100%;
+    color: #ffffff;
+    font-size: 0.48rem;
+}
+
+
 .list-title {
     position: relative;
     /* margin-top: 0.3rem; */

@@ -30,7 +30,7 @@
     <div class="home-container">
         <header class="home-index-bar home-index-bar-nav">
             <div class="header-content">
-                <i class="home-calendar iconfont">&#xe69d;</i>
+                <i class="home-calendar iconfont">&#xe624;</i>
                 <div class="home-title">Remember Me</div>
                 <i class="home-setting iconfont">&#xe600;</i>
             </div>
@@ -56,19 +56,17 @@
                 <!-- row -->
                 <div class="list-content hide">
                         <a href="#" class="list-link">
-                            <div class="list-icon-block">
-                                <i class="list-icon iconfont">&#xe703;</i>
+                            <div class="list-icon-edit-block">
+                                <i class="list-left-icon iconfont">&#xe625;</i>
+
+                                <i class="list-right-icon iconfont">&#xe627;</i>
+
                             </div>
-                            
-                            <?= Html::beginForm(['order/update'], 'post', ['enctype' => 'multipart/form-data']) ?>
 
-                            <?= Html::input('text', 'username') ?>
-
-                            <?= Html::endForm() ?>
-
-                            <!-- <form action="">
-                            <input type="text" name="firstname" class="category-input">
-                            </form> -->
+                            <form id="form" method="post">
+                                <input type="text" name="name" id="name" class="category-input">
+                            </form>
+                            <button onclick="getName()">点我点我</button>
                         </a>
                 </div>
 
@@ -78,5 +76,10 @@
 </body>
 <script src="assets/js/jquery-3.2.1.js"></script>
 <script>
+    function getName()
+    {
+        var name = $("#name").val();
+        console.log('name = ' + name);
+    }
 </script>
 </html>
