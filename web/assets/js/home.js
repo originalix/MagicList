@@ -12,27 +12,27 @@ var Home = {
 
                 // 硬装
                 case 2:
-                    changeListStyle(id, "#493a6c", "&#xe606;");
+                    changeListStyle(id, "#a16e96", "&#xe606;");
                 break;
 
                 // 软装
                 case 3:
-                    changeListStyle(id, "#493a6c", "&#xe650;");
+                    changeListStyle(id, "#dc93ae", "&#xe650;");
                     break;
 
                 // 数码
                 case 4:
-                    changeListStyle(id, "#493a6c", "&#xe62b;");
+                    changeListStyle(id, "#59455e", "&#xe62b;");
                     break;
 
                 // 显示器
                 case 5:
-                    changeListStyle(id, "#493a6c", "&#xe63e;");
+                    changeListStyle(id, "#8c8aaa", "&#xe63e;");
                     break;
 
                 // 机械键盘
                 case 6:
-                    changeListStyle(id, "#493a6c", "&#xe63f;");
+                    changeListStyle(id, "#8c4c66", "&#xe63f;");
                     break;
 
                 default:
