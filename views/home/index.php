@@ -37,7 +37,7 @@
                 <?php foreach( $categories as $category ): ?>
                     <!-- row -->
                     <div class="list-content hide" id=<?php echo("list-content" . "$category->id"); ?>>
-                        <a href="<?php echo yii\helpers\Url::to(['site/index']) ?>" class="list-link">
+                        <a href="<?php echo yii\helpers\Url::to(['category/index', 'id' => $category->id]) ?>" class="list-link">
                             <div class="list-icon-block">
                                 <i class="list-icon iconfont"></i>
                             </div>

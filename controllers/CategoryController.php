@@ -9,5 +9,8 @@ use app\models\Categories;
 
 class CategoryController extends BaseController
 {
-    
+    public function actionIndex($id)
+    {
+        
+    }
 }
