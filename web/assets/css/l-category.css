@@ -43,7 +43,7 @@
     
     position: relative;
     display: block;
-    top: 0.32rem;
+    margin-top: 0.32rem;
     margin-left: 0.21rem;
     margin-right: 0.21rem;
     height: 0.48rem;
@@ -88,9 +88,17 @@
     /* display: none; */
 }
 
+/* 新增物品表单样式 */
+.add-form {
+    position: relative;
+}
+
 .category-input {
-    background-color: rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0);
-    font-size: 0.3rem;
+    position: relative;
+    margin-left: 0.44rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
+    font-size: 0.33rem;
 }
 

@@ -62,10 +62,11 @@
                                 <i class="list-right-icon iconfont">&#xe627;</i>
 
                             </div>
-
-                            <form id="form" method="post">
-                                <input type="text" name="name" id="name" class="category-input">
-                            </form>
+                            <div class="add-form">
+                                <form id="form" method="post">
+                                    <input type="text" name="name" id="name" class="category-input">
+                                </form>
+                            </div>
                             <button onclick="getName()">点我点我</button>
                         </a>
                 </div>
