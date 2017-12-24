@@ -12,6 +12,7 @@ class CategoryController extends BaseController
 {
     public function actionIndex($id)
     {
+        $this->layout = "layout";
         $models = Products::find()->where(['category_id' => $id])->orderBy('created_at')->all();
         return $this->render('index', ['products' => $models]);
     }

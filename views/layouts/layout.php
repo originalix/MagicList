@@ -16,6 +16,7 @@
     <!-- icon-font -->
     <link rel="stylesheet" href="assets/css/iconfont.css">
     <link rel="stylesheet" href="assets/css/l-header.css">
+    <link rel="stylesheet" href="assets/css/l-home-index.css">
 
 </head>
 
@@ -29,12 +30,6 @@
             </div>
         </header>
 
-        <div class="home-main">
-        
-        </div>
-    </div>
+        <?php echo $content; ?>
 </body>
-<script src="assets/js/jquery-3.2.1.js"></script>
-<script>
-</script>
 </html>

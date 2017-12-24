@@ -15,7 +15,7 @@
 
     <!-- icon-font -->
     <link rel="stylesheet" href="assets/css/iconfont.css">
-    
+    <link rel="stylesheet" href="assets/css/l-header.css">
     <link rel="stylesheet" href="assets/css/l-home-index.css">
 
 </head>
@@ -54,12 +54,9 @@
         </div>
     </div>
 </body>
-
 <script src="assets/js/jquery-3.2.1.js"></script>
 <script src="assets/js/home.js"></script>
-
 <script>
-
     function changeIcon(id, typeid)
     {
         var home = Home.createNew();
