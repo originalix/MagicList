@@ -41,7 +41,8 @@
 
                 <!-- row -->
                 <div class="list-content hide">
-                        <a href="#" class="list-link">
+                        <!-- 尚未编辑 -->
+                        <a href="#" class="list-link wait-edit">
                             <div class="list-icon-block">
                                 <i class="list-icon iconfont">&#xe703;</i>
                             </div>
@@ -49,6 +50,37 @@
                                 <span class="list-title">
                                     Write your own
                                 </span>
+                            </div>
+                        </a>
+                        <!-- 开始编辑 -->
+                        <a href="#" class="list-link editing">
+                            <div class="list-icon-edit-block">
+                                <i class="list-left-icon iconfont">&#xe625;</i>
+
+                                <i class="list-right-icon iconfont">&#xe627;</i>
+
+                            </div>
+                            <div class="add-form">
+                                <form id="form" method="post" class="form-content">
+                                    <div class="input-control">
+                                        <i class="form-edit-icon iconfont">&#xe693;</i>
+                                        <input type="text" name="name" id="name" class="category-input" placeholder="单品名称">
+                                        <hr class="form-separated"></hr>
+                                    </div>
+
+                                    <div class="input-control">
+                                        <i class="form-edit-icon iconfont">&#xe6da;</i>
+                                        <input type="text" name="price" id="price" class="category-input" placeholder="单品单价">
+                                        <hr class="form-separated"></hr>
+                                    </div>
+
+                                    <div class="input-control">
+                                        <i class="form-edit-icon iconfont">&#xe6f1;</i>
+                                        <input type="text" name="count" id="count" class="category-input" placeholder="购买数量">
+                                        <hr class="form-separated"></hr>
+                                    </div>
+                                    
+                                </form>
                             </div>
                         </a>
                 </div>
@@ -66,14 +98,24 @@
                                 <form id="form" method="post" class="form-content">
                                     <div class="input-control">
                                         <i class="form-edit-icon iconfont">&#xe693;</i>
-                                        <input type="text" name="name" id="name" class="category-input" placeholder="请输入单品名称">
+                                        <input type="text" name="name" id="name" class="category-input" placeholder="单品名称">
                                         <hr class="form-separated"></hr>
                                     </div>
-                                    <!-- <input type="text" name="name" id="name" class="category-input">
-                                    <input type="text" name="name" id="name" class="category-input"> -->
+
+                                    <div class="input-control">
+                                        <i class="form-edit-icon iconfont">&#xe6da;</i>
+                                        <input type="text" name="price" id="price" class="category-input" placeholder="单品单价">
+                                        <hr class="form-separated"></hr>
+                                    </div>
+
+                                    <div class="input-control">
+                                        <i class="form-edit-icon iconfont">&#xe6f1;</i>
+                                        <input type="text" name="count" id="count" class="category-input" placeholder="购买数量">
+                                        <hr class="form-separated"></hr>
+                                    </div>
+                                    
                                 </form>
                             </div>
-                            <button onclick="getName()">点我点我</button>
                         </a>
                 </div>
 
@@ -87,6 +129,10 @@
     {
         var name = $("#name").val();
         console.log('name = ' + name);
+        var price = $("#price").val();
+        console.log('price = ' + price);
+        var count = $("#count").val();
+        console.log('count = ' + count);
     }
 </script>
 </html>

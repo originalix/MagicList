@@ -155,3 +155,11 @@ input:focus, textarea:focus {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #666666;
 }
+
+.wait-edit {
+    /* display: none; */
+}
+
+.editing {
+    display: none;
+}
