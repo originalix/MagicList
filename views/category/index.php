@@ -57,7 +57,7 @@
                             <div class="list-icon-edit-block">
                                 <i class="list-left-icon iconfont" onclick="changeEditState()">&#xe625;</i>
 
-                                <i class="list-right-icon iconfont">&#xe627;</i>
+                                <i class="list-right-icon iconfont" onclick="submitForm()">&#xe627;</i>
 
                             </div>
                             <div class="add-form">
@@ -110,7 +110,28 @@
             $(".wait-edit").css("display", "block");
             $(".editing").css("display", 'none');
         }
-        
     }
+
+    function submitForm()
+    {
+        var params = {
+            "name": $("#name").val(),
+            "price": $("#price").val(),
+            "count": $("#count").val(),
+        };
+
+        console.log(params);
+
+        $.ajax({
+            type: "POST",
+            url: "",
+            data: params,
+            dataType: "json",
+            success: function(msg) {
+
+            }
+        });
+    }
+
 </script>
 </html>
