@@ -47,23 +47,20 @@
                                 <i class="product-left-icon iconfont">&#xe67d;</i>
                                 <i class="product-center-icon iconfont">&#xe636;</i>
                                 <i class="product-right-icon iconfont">&#xe603;</i>
-                                <i class="product-center-icon iconfont"><!-- 注释去空格 --></i>
                             </div>
-                            <div class="list-title-block">
-                                <i class="form-edit-icon iconfont">&#xe693;</i>
-                                <p class="list-title product-name">
+                            <div class="list-title-block product-list-title-block">
+                                <i class="list-name-icon iconfont">&#xe693;</i>
+                                <p class="product-list-title product-name">
                                     <?php echo($product->name); ?>
                                 </p>
-                                <span class="list-title product-price">
-                                    <i class="form-edit-icon iconfont">&#xe6da;</i>
+                                <i class="list-name-icon iconfont">&#xe6da;</i>
+                                <p class="product-list-title product-price">
                                     <?php echo($product->price); ?>
-                                    <br>
-                                </span>
-                                <span class="list-title product-count">
-                                    <i class="form-edit-icon iconfont">&#xe6f1;</i>
+                                </p>
+                                <i class="list-name-icon iconfont">&#xe6f1;</i>
+                                <p class="product-list-title product-count">
                                     <?php echo($product->count); ?>
-                                    <br>
-                                </span>
+                                </p>
                             </div>
                         </a>
                     </div>

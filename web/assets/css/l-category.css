@@ -167,7 +167,7 @@ input:focus, textarea:focus {
 /* 单品列表样式 */
 .product-list-icon-block {
     position: relative;
-    display: inline-block;
+    display: block;
     margin-top: 0.35rem;
     margin-left:0.23rem;
     margin-right: 0.2rem;
@@ -200,4 +200,28 @@ input:focus, textarea:focus {
     vertical-align: middle;
     color: #ffffff;
     font-size: 0.48rem;
+}
+
+.list-name-icon {
+    float: left;
+    position: relative;
+    display: inline-block;
+    /* margin-top: 0.2rem; */
+    /* margin-left: 0.15rem; */
+    color: #ffffff;
+    font-size: 0.4rem;
+}
+
+.product-list-title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 0.4rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.product-list-title-block {
+    padding-top: 0.1rem;
 }
