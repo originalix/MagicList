@@ -93,26 +93,65 @@
     position: relative;
     display: inline-block;
     width: 100%;
+    height: 2.15rem;
 }
 
-.category-input {
-    position: relative;
-    float: left;
-    display: inline-block;
-    /* margin-top: 0.26rem;
-    margin-left: 0.44rem; */
-    width: 80%;
-    background-color: rgba(255, 255, 255, 1);
-    border-color: rgba(0, 0, 0, 1);
-    color: #000000;
-    font-size: 0.33rem;
+.form-content {
+    width: 100%;
+    height: 100%;
 }
 
 .form-edit-icon {
     float: left;
     position: relative;
     display: inline-block;
+    margin-top: 0.2rem;
+    margin-left: 0.15rem;
     color: #ffffff;
-    font-size: 0.2rem;
+    font-size: 0.35rem;
 }
 
+.category-input {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    font-size: 0.33rem;
+}
+
+.form-separated {
+    position: relative;
+    float: left;
+    margin-top: 0;
+    margin-left: 0.7rem;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 70%;
+    height: 0.01rem;
+    padding: 0;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+/* 去除文本框默认发光边框 */
+input:focus, textarea:focus {
+    outline: none;
+}
+/* Placeholder 样式 */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #DCDCDC;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #666666;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #666666;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #666666;
+}

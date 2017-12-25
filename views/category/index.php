@@ -63,9 +63,12 @@
 
                             </div>
                             <div class="add-form">
-                                <form id="form" method="post">
-                                    <i class="form-edit-icon iconfont">&#xe625;</i>
-                                    <input type="text" name="name" id="name" class="category-input">
+                                <form id="form" method="post" class="form-content">
+                                    <div class="input-control">
+                                        <i class="form-edit-icon iconfont">&#xe693;</i>
+                                        <input type="text" name="name" id="name" class="category-input" placeholder="请输入单品名称">
+                                        <hr class="form-separated"></hr>
+                                    </div>
                                     <!-- <input type="text" name="name" id="name" class="category-input">
                                     <input type="text" name="name" id="name" class="category-input"> -->
                                 </form>
