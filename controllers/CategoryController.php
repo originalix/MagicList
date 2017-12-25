@@ -23,9 +23,13 @@ class CategoryController extends BaseController
 
     public function actionCreate($id)
     {
-        if (Yii::$app->request->isPost) {
+        if (Yii::$app->request->isAjax) {
             \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
-            return ['msg' => 'success'];
+            $request = Yii::$app->request;
+            $name = $request->post('name');
+            $price = doubleval($request->post('price'));
+            $count = intval($request->post('count'));
+            return ['msg' => $name];
         }
     }
 }
