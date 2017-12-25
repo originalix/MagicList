@@ -128,8 +128,14 @@
             url: "",
             data: params,
             dataType: "json",
-            success: function(msg) {
-                console.log(msg.msg);
+            success: function(response) {
+                var code = response.code;
+                var msg = response.msg;
+                if (code == 200) {
+                    console.log(msg);
+                } else {
+                    console.log('code = ' + code + '; msg = ' + msg);
+                }
             }
         });
     }

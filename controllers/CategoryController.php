@@ -25,22 +25,16 @@ class CategoryController extends BaseController
     {
         \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
         if (!Yii::$app->request->isAjax) {
-            return ['msg' => 'error'];
+            return ['code' => 401, 'msg' => 'Ajax请求失败'];
         }
 
         $model = new Products;
         $post = Yii::$app->request->post();
-        if ($model->load($post)) {
-            return ['msg' => 'load'];
-        }
+
         if ($model->createProducts($post)) {
-            return ['msg' => 'success'];
+            return ['code' => 200, 'msg' => '添加新单品成功'];
         }
-        return ['msg' => 'failure'];
-        //     $request = Yii::$app->request;
-        //     $name = $request->post('name');
-        //     $price = doubleval($request->post('price'));
-        //     $count = intval($request->post('count'));
-        //     return ['msg' => $name];
+        
+        return ['code' => 402, 'msg' => $model->getModelError($model)];
     }
 }

@@ -37,7 +37,8 @@ class Products extends \yii\db\ActiveRecord
             ['price', 'required', 'message' => '商品单价不能为空'],
             ['count', 'required', 'message' => '购买数量不能为空'],
             [['category_id', 'count', 'finish'], 'integer'],
-            [['price'], 'number'],
+            [['price'], 'number', 'min' => 0],
+            [['count'], 'integer', 'min' => 1],
             [['created_at', 'updated_at'], 'safe'],
             [['name'], 'string', 'max' => 255, 'min' => 3],
         ];
@@ -45,31 +46,29 @@ class Products extends \yii\db\ActiveRecord
 
     public function validateAjax($data)
     {
-        $this->category_id = $data['category_id'];
+        $this->category_id = intval($data['category_id']);
         $this->name = $data['name'];
-        $this->price = $data['price'];
-        $this->count = $data['count'];
+        $this->price = doubleval($data['price']);
+        $this->count = intval($data['count']);
     }
-
+    
+    public function createProducts($data)
+    {
+        $this->validateAjax($data);
+        if ($this->validate()) {
+            if ($this->save()) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
     public static function getModelError($model) {
         $errors = $model->getErrors();    //得到所有的错误信息
         if(!is_array($errors)) return '';
         $firstError = array_shift($errors);
         if(!is_array($firstError)) return '';
         return array_shift($firstError);
-    }
-
-    public function createProducts($data)
-    {
-        $this->validateAjax($data);
-        if ($this->validate()) {
-            return true;
-        }
-        if ($this->hasErrors()) {
-            var_dump($this->getModelError($this));
-            exit();
-        }
-        return false;
     }
 
     /**
