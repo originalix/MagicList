@@ -144,14 +144,16 @@
         }
         var html = "";
         for (var i = 0; i < data.length; i++) {
-            html += "<a href='#' class='list-link'> <div class='product-list-icon-block'> <i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i> </div> <div class='list-title-block product-list-title-block'> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe693;</i> <p class='product-list-title product-name'>" +
+            html += "<div class='list-content hide' id= " + 
+            data[i].id +
+            "<a href='#' class='list-link'> <div class='product-list-icon-block'> <i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i> </div> <div class='list-title-block product-list-title-block'> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe693;</i> <p class='product-list-title product-name'>" +
             data[i].name + 
             "</p> </div> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe6da;</i> <p class='product-list-title product-price'> ￥" +
             data[i].price  + 
             "</p> </div> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe6f1;</i> <p class='product-list-title product-count'>" + 
              data[i].count + 
-             "</p> </div> </div> </a>";
-            $(".category-list") .html(html);
+             "</p> </div> </div> </a> </div>";
+            $(".category-list").html(html);
         }
     }
 
@@ -177,7 +179,8 @@
                 if (code == 200) {
                     console.log(response.data);
                     changeEditState();
-                    location.reload();
+                    // location.reload();
+                    refreshData(response.data);
                 } else {
                     console.log('code = ' + code + '; msg = ' + msg);
                 }
