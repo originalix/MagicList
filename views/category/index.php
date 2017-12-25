@@ -30,7 +30,7 @@
     <div class="home-container">
         <header class="home-index-bar home-index-bar-nav">
             <div class="header-content">
-                <i class="home-calendar iconfont">&#xe624;</i>
+                <i class="home-calendar iconfont" onclick="window.history.go(-1)">&#xe624;</i>
                 <div class="home-title">Remember Me</div>
                 <i class="home-setting iconfont">&#xe600;</i>
             </div>
@@ -38,8 +38,35 @@
 
         <div class="category-main">
             <div class="category-list">
+                <!-- 循环展示清单类目列表 -->
+                <?php foreach( $products as $product ): ?>
+                    <!-- row -->
+                    <div class="list-content hide" id=<?php echo("list-content" . "$product->id"); ?>>
+                        <a href="#" class="list-link">
+                            <div class="product-list-icon-block">
+                                <i class="product-left-icon iconfont">&#xe67d;</i>
+                                <i class="product-center-icon iconfont">&#xe636;</i>
+                                <i class="product-right-icon iconfont">&#xe603;</i>
+                            </div>
+                            <!-- <div class="list-title-block">
+                                <span class="list-title product-name">
+                                    <?php echo($product->name); ?>
+                                    <br>
+                                </span>
+                                <span class="list-title product-price">
+                                    <?php echo($product->price); ?>
+                                    <br>
+                                </span>
+                                <span class="list-title product-count">
+                                    <?php echo($product->count); ?>
+                                    <br>
+                                </span>
+                            </div> -->
+                        </a>
+                    </div>
+                <?php endforeach; ?>
 
-                <!-- row -->
+                <!-- 编辑cell -->
                 <div class="list-content hide">
                         <!-- 尚未编辑 -->
                         <a href="#" class="list-link wait-edit" onclick="changeEditState()">
@@ -91,16 +118,6 @@
 </body>
 <script src="assets/js/jquery-3.2.1.js"></script>
 <script>
-    function getName()
-    {
-        var name = $("#name").val();
-        console.log('name = ' + name);
-        var price = $("#price").val();
-        console.log('price = ' + price);
-        var count = $("#count").val();
-        console.log('count = ' + count);
-    }
-
     function changeEditState()
     {
         if ($(".editing").css("display") === 'none') {

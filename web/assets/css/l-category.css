@@ -163,3 +163,41 @@ input:focus, textarea:focus {
 .editing {
     display: none;
 }
+
+/* 单品列表样式 */
+.product-list-icon-block {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.35rem;
+    margin-left:0.23rem;
+    margin-right: 0.2rem;
+    height: 0.5rem;
+    width: 87.1%;
+    text-align: center;
+}
+
+.product-left-icon {
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 0.48rem;
+}
+
+.product-center-icon {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.15rem;
+    color: #ffffff;
+    font-size: 0.26rem;
+    text-align: center;
+}
+
+.product-right-icon {
+    float: right;
+    display: inline-block;
+    margin-top: 0.05rem;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 0.48rem;
+}
