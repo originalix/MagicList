@@ -38,39 +38,41 @@
 
         <div class="category-main">
             <div class="category-list">
-                <!-- 循环展示清单类目列表 -->
-                <?php foreach( $products as $product ): ?>
-                    <!-- row -->
-                    <div class="list-content hide" id=<?php echo("list-content" . "$product->id"); ?>>
-                        <a href="#" class="list-link">
-                            <div class="product-list-icon-block">
-                                <i class="product-left-icon iconfont">&#xe67d;</i>
-                                <i class="product-center-icon iconfont">&#xe636;</i>
-                                <i class="product-right-icon iconfont">&#xe603;</i>
-                            </div>
-                            <div class="list-title-block product-list-title-block">
-                                <div class="product-list-seprate">
-                                    <i class="list-name-icon iconfont">&#xe693;</i>
-                                    <p class="product-list-title product-name">
-                                        <?php echo($product->name); ?>
-                                    </p>
+                <div id="category-list-content">
+                    <!-- 循环展示清单类目列表 -->
+                    <?php foreach( $products as $product ): ?>
+                        <!-- row -->
+                        <div class="list-content hide" id=<?php echo("list-content" . "$product->id"); ?>>
+                            <a href="#" class="list-link">
+                                <div class="product-list-icon-block">
+                                    <i class="product-left-icon iconfont">&#xe67d;</i>
+                                    <i class="product-center-icon iconfont">&#xe636;</i>
+                                    <i class="product-right-icon iconfont">&#xe603;</i>
                                 </div>
-                                <div class="product-list-seprate">
-                                    <i class="list-name-icon iconfont">&#xe6da;</i>
-                                    <p class="product-list-title product-price">
-                                        ￥<?php echo($product->price); ?>
-                                    </p>
+                                <div class="list-title-block product-list-title-block">
+                                    <div class="product-list-seprate">
+                                        <i class="list-name-icon iconfont">&#xe693;</i>
+                                        <p class="product-list-title product-name">
+                                            <?php echo($product->name); ?>
+                                        </p>
+                                    </div>
+                                    <div class="product-list-seprate">
+                                        <i class="list-name-icon iconfont">&#xe6da;</i>
+                                        <p class="product-list-title product-price">
+                                            ￥<?php echo($product->price); ?>
+                                        </p>
+                                    </div>
+                                    <div class="product-list-seprate">
+                                        <i class="list-name-icon iconfont">&#xe6f1;</i>
+                                        <p class="product-list-title product-count">
+                                            <?php echo($product->count); ?>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="product-list-seprate">
-                                    <i class="list-name-icon iconfont">&#xe6f1;</i>
-                                    <p class="product-list-title product-count">
-                                        <?php echo($product->count); ?>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                <?php endforeach; ?>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
 
                 <!-- 编辑cell -->
                 <div class="list-content hide">
@@ -137,6 +139,24 @@
         }
     }
 
+    function refreshData(data)
+    {
+        if (data.length <= 0) {
+            return;
+        }
+        var html = "";
+        for (var i = 0; i < data.length; i++) {
+            html += "<a href='#' class='list-link'> <div class='product-list-icon-block'> <i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i> </div> <div class='list-title-block product-list-title-block'> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe693;</i> <p class='product-list-title product-name'>" +
+            data[i].name + 
+            "</p> </div> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe6da;</i> <p class='product-list-title product-price'> ￥" +
+            data[i].price  + 
+            "</p> </div> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe6f1;</i> <p class='product-list-title product-count'>" + 
+             data[i].count + 
+             "</p> </div> </div> </a>";
+            $("#" + id) .html(html);
+        }
+    }
+
     function submitForm()
     {
         var params = {
@@ -146,7 +166,7 @@
             "category_id" : <?php echo $category_id; ?>,
         };
 
-        console.log(params);
+        // console.log(params);
 
         $.ajax({
             type: "POST",
@@ -157,8 +177,9 @@
                 var code = response.code;
                 var msg = response.msg;
                 if (code == 200) {
-                    console.log(msg);
+                    console.log(response.data);
                     changeEditState();
+                    refreshData(response.data);
                 } else {
                     console.log('code = ' + code + '; msg = ' + msg);
                 }

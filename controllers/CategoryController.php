@@ -32,7 +32,8 @@ class CategoryController extends BaseController
         $post = Yii::$app->request->post();
 
         if ($model->createProducts($post)) {
-            return ['code' => 200, 'msg' => '添加新单品成功'];
+            $models = Products::find()->all();
+            return ['code' => 200, 'msg' => '添加新单品成功', 'data' => $models];
         }
         
         return ['code' => 402, 'msg' => $model->getModelError($model)];
