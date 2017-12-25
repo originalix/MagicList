@@ -47,21 +47,24 @@
                                 <i class="product-left-icon iconfont">&#xe67d;</i>
                                 <i class="product-center-icon iconfont">&#xe636;</i>
                                 <i class="product-right-icon iconfont">&#xe603;</i>
+                                <i class="product-center-icon iconfont"><!-- 注释去空格 --></i>
                             </div>
-                            <!-- <div class="list-title-block">
-                                <span class="list-title product-name">
+                            <div class="list-title-block">
+                                <i class="form-edit-icon iconfont">&#xe693;</i>
+                                <p class="list-title product-name">
                                     <?php echo($product->name); ?>
-                                    <br>
-                                </span>
+                                </p>
                                 <span class="list-title product-price">
+                                    <i class="form-edit-icon iconfont">&#xe6da;</i>
                                     <?php echo($product->price); ?>
                                     <br>
                                 </span>
                                 <span class="list-title product-count">
+                                    <i class="form-edit-icon iconfont">&#xe6f1;</i>
                                     <?php echo($product->count); ?>
                                     <br>
                                 </span>
-                            </div> -->
+                            </div>
                         </a>
                     </div>
                 <?php endforeach; ?>

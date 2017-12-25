@@ -55,7 +55,7 @@
     width: 0.45rem;
     height: 100%;
     color: #ffffff;
-    font-size: 0.45rem;
+    font-size: 0.3rem;
 }
 
 .list-right-icon {
@@ -63,7 +63,7 @@
     width: 0.48rem;
     height: 100%;
     color: #ffffff;
-    font-size: 0.48rem;
+    font-size: 0.4rem;
 }
 
 
@@ -179,7 +179,7 @@ input:focus, textarea:focus {
 .product-left-icon {
     float: left;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     color: #ffffff;
     font-size: 0.48rem;
 }
@@ -197,7 +197,7 @@ input:focus, textarea:focus {
     float: right;
     display: inline-block;
     margin-top: 0.05rem;
-    vertical-align: top;
+    vertical-align: middle;
     color: #ffffff;
     font-size: 0.48rem;
 }
