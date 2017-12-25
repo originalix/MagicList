@@ -104,9 +104,11 @@
     function changeEditState()
     {
         if ($(".editing").css("display") === 'none') {
+            console.log('开始编辑');
             $(".wait-edit").css("display", "none");
             $(".editing").css("display", 'block');
         } else {
+            console.log('关闭编辑');
             $(".wait-edit").css("display", "block");
             $(".editing").css("display", 'none');
         }
@@ -133,6 +135,7 @@
                 var msg = response.msg;
                 if (code == 200) {
                     console.log(msg);
+                    changeEditState();
                 } else {
                     console.log('code = ' + code + '; msg = ' + msg);
                 }
