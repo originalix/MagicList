@@ -18,7 +18,8 @@ class CategoryController extends BaseController
         }
         $this->layout = false;
         $models = Products::find()->where(['category_id' => $id])->orderBy('created_at')->all();
-        return $this->render('index', ['products' => $models, 'category_id' => $id]);
+        $category = Categories::findOne($id);
+        return $this->render('index', ['products' => $models, 'category' => $category]);
     }
 
     public function actionCreate($id)
