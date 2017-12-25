@@ -49,18 +49,24 @@
                                 <i class="product-right-icon iconfont">&#xe603;</i>
                             </div>
                             <div class="list-title-block product-list-title-block">
-                                <i class="list-name-icon iconfont">&#xe693;</i>
-                                <p class="product-list-title product-name">
-                                    <?php echo($product->name); ?>
-                                </p>
-                                <i class="list-name-icon iconfont">&#xe6da;</i>
-                                <p class="product-list-title product-price">
-                                    <?php echo($product->price); ?>
-                                </p>
-                                <i class="list-name-icon iconfont">&#xe6f1;</i>
-                                <p class="product-list-title product-count">
-                                    <?php echo($product->count); ?>
-                                </p>
+                                <div class="product-list-seprate">
+                                    <i class="list-name-icon iconfont">&#xe693;</i>
+                                    <p class="product-list-title product-name">
+                                        <?php echo($product->name); ?>
+                                    </p>
+                                </div>
+                                <div class="product-list-seprate">
+                                    <i class="list-name-icon iconfont">&#xe6da;</i>
+                                    <p class="product-list-title product-price">
+                                        ￥<?php echo($product->price); ?>
+                                    </p>
+                                </div>
+                                <div class="product-list-seprate">
+                                    <i class="list-name-icon iconfont">&#xe6f1;</i>
+                                    <p class="product-list-title product-count">
+                                        <?php echo($product->count); ?>
+                                    </p>
+                                </div>
                             </div>
                         </a>
                     </div>

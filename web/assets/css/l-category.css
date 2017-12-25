@@ -207,7 +207,8 @@ input:focus, textarea:focus {
     position: relative;
     display: inline-block;
     /* margin-top: 0.2rem; */
-    /* margin-left: 0.15rem; */
+    padding-right: 0.25rem;
+    margin-left: 0.5rem;
     color: #ffffff;
     font-size: 0.4rem;
 }
@@ -219,9 +220,13 @@ input:focus, textarea:focus {
     width: 100%;
     font-size: 0.4rem;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
 }
 
 .product-list-title-block {
-    padding-top: 0.1rem;
+    padding-top: 0.3rem;
+}
+
+.product-list-seprate {
+    margin-top: 0.1rem;
 }
