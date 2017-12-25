@@ -79,7 +79,7 @@
                                         <input type="text" name="count" id="count" class="category-input" placeholder="购买数量">
                                         <hr class="form-separated"></hr>
                                     </div>
-                                    
+                                    <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
                                 </form>
                             </div>
                         </a>
@@ -128,7 +128,7 @@
             data: params,
             dataType: "json",
             success: function(msg) {
-
+                console.log(msg.msg);
             }
         });
     }
