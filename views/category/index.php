@@ -42,7 +42,7 @@
                 <!-- row -->
                 <div class="list-content hide">
                         <!-- 尚未编辑 -->
-                        <a href="#" class="list-link wait-edit">
+                        <a href="#" class="list-link wait-edit" onclick="changeEditState()">
                             <div class="list-icon-block">
                                 <i class="list-icon iconfont">&#xe703;</i>
                             </div>
@@ -55,41 +55,7 @@
                         <!-- 开始编辑 -->
                         <a href="#" class="list-link editing">
                             <div class="list-icon-edit-block">
-                                <i class="list-left-icon iconfont">&#xe625;</i>
-
-                                <i class="list-right-icon iconfont">&#xe627;</i>
-
-                            </div>
-                            <div class="add-form">
-                                <form id="form" method="post" class="form-content">
-                                    <div class="input-control">
-                                        <i class="form-edit-icon iconfont">&#xe693;</i>
-                                        <input type="text" name="name" id="name" class="category-input" placeholder="单品名称">
-                                        <hr class="form-separated"></hr>
-                                    </div>
-
-                                    <div class="input-control">
-                                        <i class="form-edit-icon iconfont">&#xe6da;</i>
-                                        <input type="text" name="price" id="price" class="category-input" placeholder="单品单价">
-                                        <hr class="form-separated"></hr>
-                                    </div>
-
-                                    <div class="input-control">
-                                        <i class="form-edit-icon iconfont">&#xe6f1;</i>
-                                        <input type="text" name="count" id="count" class="category-input" placeholder="购买数量">
-                                        <hr class="form-separated"></hr>
-                                    </div>
-                                    
-                                </form>
-                            </div>
-                        </a>
-                </div>
-
-                <!-- row -->
-                <div class="list-content hide">
-                        <a href="#" class="list-link">
-                            <div class="list-icon-edit-block">
-                                <i class="list-left-icon iconfont">&#xe625;</i>
+                                <i class="list-left-icon iconfont" onclick="changeEditState()">&#xe625;</i>
 
                                 <i class="list-right-icon iconfont">&#xe627;</i>
 
@@ -133,6 +99,18 @@
         console.log('price = ' + price);
         var count = $("#count").val();
         console.log('count = ' + count);
+    }
+
+    function changeEditState()
+    {
+        if ($(".editing").css("display") === 'none') {
+            $(".wait-edit").css("display", "none");
+            $(".editing").css("display", 'block');
+        } else {
+            $(".wait-edit").css("display", "block");
+            $(".editing").css("display", 'none');
+        }
+        
     }
 </script>
 </html>
