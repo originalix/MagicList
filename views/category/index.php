@@ -118,6 +118,7 @@
             "name": $("#name").val(),
             "price": $("#price").val(),
             "count": $("#count").val(),
+            "category_id" : <?php echo $category_id; ?>,
         };
 
         console.log(params);

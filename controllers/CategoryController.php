@@ -18,18 +18,29 @@ class CategoryController extends BaseController
         }
         $this->layout = false;
         $models = Products::find()->where(['category_id' => $id])->orderBy('created_at')->all();
-        return $this->render('index', ['products' => $models]);
+        return $this->render('index', ['products' => $models, 'category_id' => $id]);
     }
 
     public function actionCreate($id)
     {
-        if (Yii::$app->request->isAjax) {
-            \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
-            $request = Yii::$app->request;
-            $name = $request->post('name');
-            $price = doubleval($request->post('price'));
-            $count = intval($request->post('count'));
-            return ['msg' => $name];
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        if (!Yii::$app->request->isAjax) {
+            return ['msg' => 'error'];
         }
+
+        $model = new Products;
+        $post = Yii::$app->request->post();
+        if ($model->load($post)) {
+            return ['msg' => 'load'];
+        }
+        if ($model->createProducts($post)) {
+            return ['msg' => 'success'];
+        }
+        return ['msg' => 'failure'];
+        //     $request = Yii::$app->request;
+        //     $name = $request->post('name');
+        //     $price = doubleval($request->post('price'));
+        //     $count = intval($request->post('count'));
+        //     return ['msg' => $name];
     }
 }
