@@ -19,12 +19,11 @@ var Category = {
 
         category.changeCellIcon = function (id) {
             console.log($(id).find($(".product-list-icon-block")));
-            // $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont' onclick='category.changeCellIcon('" +
-            // id + 
-            // "' . '$product->id'); ?>')'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
-            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont' onclick='category.changeCellIcon('" +
-            id +
-            "')'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
+            
+            var functionName = "category.changeCellIcon('" + id + "')";
+
+            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
+            $(id).find(".product-center-icon").attr("onclick", functionName);
         }
 
         /**
