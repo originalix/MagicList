@@ -60,7 +60,7 @@
     function changeIcon(id, typeid)
     {
         var home = Home.createNew();
-        home.switchIcon(id, typeid);    
+        home.switchIcon(id, typeid, false);    
         $(".list-content").removeClass('hide');
     }
 

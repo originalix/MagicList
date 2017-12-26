@@ -34,6 +34,9 @@ var Category = {
                 data[0].category_id +
                 ")'>&#xe627;</i> </div> <div class='add-form'> <form id='form' method='post' class='form-content'> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe693;</i> <input type='text' name='name' id='name' class='category-input' placeholder='单品名称'> <hr class='form-separated'></hr> </div> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe6da;</i> <input type='text' name='price' id='price' class='category-input' placeholder='单品单价'> <hr class='form-separated'></hr> </div> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe6f1;</i> <input type='text' name='count' id='count' class='category-input' placeholder='购买数量'> <hr class='form-separated'></hr> </div> <input type='hidden' name='_csrf' value='<?=Yii::$app->request->getCsrfToken()?>' /> </form> </div> </a> </div>";
             $(".category-list").html(html);
+            var home = Home.createNew();
+            home.switchIcon(0, data[0].category_id, true);
+            $(".list-content").removeClass('hide');
         }
 
         category.submitForm = function (id) {

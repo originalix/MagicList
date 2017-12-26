@@ -124,7 +124,11 @@
 </body>
 <script src="assets/js/jquery-3.2.1.js"></script>
 <script src="assets/js/category.js"></script>
+<script src="assets/js/home.js"></script>
 <script>
     var category = Category.createNew();
+    var home = Home.createNew();
+    home.switchIcon(0, <?php echo $category->id; ?>, true);
+    $(".list-content").removeClass('hide');
 </script>
 </html>
