@@ -90,7 +90,7 @@
                             <div class="list-icon-edit-block">
                                 <i class="list-left-icon iconfont" onclick="category.changeEditState()">&#xe625;</i>
 
-                                <i class="list-right-icon iconfont" onclick="submitForm()">&#xe627;</i>
+                                <i class="list-right-icon iconfont" onclick="category.submitForm(<?php echo $category->id; ?>)">&#xe627;</i>
 
                             </div>
                             <div class="add-form">
@@ -124,12 +124,8 @@
 </body>
 <script src="assets/js/jquery-3.2.1.js"></script>
 <script src="assets/js/category.js"></script>
-<script src="assets/js/home.js"></script>
 <script>
     var category = Category.createNew();
-    console.log(category);
-    var home = Home.createNew();
-    console.log(home);
     // function changeEditState()
     // {
     //     if ($(".editing").css("display") === 'none') {

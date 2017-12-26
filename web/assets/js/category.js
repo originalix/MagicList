@@ -29,8 +29,11 @@ var Category = {
                     "</p> </div> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe6f1;</i> <p class='product-list-title product-count'>" +
                     data[i].count +
                     "</p> </div> </div> </a> </div>";
-                $(".category-list").html(html);
-            }
+                }
+                html += "<div class='list-content hide'> <!-- 尚未编辑 --> <a href='#' class='list-link wait-edit' onclick='category.changeEditState()'> <div class='list-icon-block'> <i class='list-icon iconfont'>&#xe703;</i> </div> <div class='list-title-block'> <span class='list-title'> Write your own </span> </div> </a> <!-- 开始编辑 --> <a href='#' class='list-link editing'> <div class='list-icon-edit-block'> <i class='list-left-icon iconfont' onclick='category.changeEditState()'>&#xe625;</i> <i class='list-right-icon iconfont' onclick='category.submitForm(" +
+                data[0].category_id +
+                ")'>&#xe627;</i> </div> <div class='add-form'> <form id='form' method='post' class='form-content'> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe693;</i> <input type='text' name='name' id='name' class='category-input' placeholder='单品名称'> <hr class='form-separated'></hr> </div> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe6da;</i> <input type='text' name='price' id='price' class='category-input' placeholder='单品单价'> <hr class='form-separated'></hr> </div> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe6f1;</i> <input type='text' name='count' id='count' class='category-input' placeholder='购买数量'> <hr class='form-separated'></hr> </div> <input type='hidden' name='_csrf' value='<?=Yii::$app->request->getCsrfToken()?>' /> </form> </div> </a> </div>";
+            $(".category-list").html(html);
         }
 
         category.submitForm = function (id) {
@@ -40,8 +43,6 @@ var Category = {
                 "count": $("#count").val(),
                 "category_id": id,
             };
-
-            // console.log(params);
 
             $.ajax({
                 type: "POST",
@@ -53,9 +54,8 @@ var Category = {
                     var msg = response.msg;
                     if (code == 200) {
                         console.log(response.data);
-                        changeEditState();
-                        // location.reload();
-                        refreshData(response.data);
+                        category.changeEditState();
+                        category.refreshData(response.data);
                     } else {
                         console.log('code = ' + code + '; msg = ' + msg);
                     }
