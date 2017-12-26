@@ -42,10 +42,10 @@
                 <?php foreach( $products as $product ): ?>
                     <!-- row -->
                     <div class="list-content hide" id=<?php echo("list-content" . "$product->id"); ?>>
-                        <div href="#" class="list-link">
+                        <div class="list-link">
                             <div class="product-list-icon-block">
                                 <i class="product-left-icon iconfont">&#xe67d;</i>
-                                <i class="product-center-icon iconfont">&#xe636;</i>
+                                <i class="product-center-icon iconfont" onclick="category.changeCellIcon('#<?php echo("list-content" . "$product->id"); ?>')">&#xe636;</i>
                                 <i class="product-right-icon iconfont">&#xe603;</i>
                             </div>
                             <div class="list-title-block product-list-title-block">

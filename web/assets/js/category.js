@@ -2,6 +2,9 @@ var Category = {
     createNew: function () {
         var category = {};
 
+        /**
+         * 改变编辑cell的编辑状态
+         */
         category.changeEditState = function () {
             if ($(".editing").css("display") === 'none') {
                 console.log('开始编辑');
@@ -14,6 +17,20 @@ var Category = {
             }
         }
 
+        category.changeCellIcon = function (id) {
+            console.log($(id).find($(".product-list-icon-block")));
+            // $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont' onclick='category.changeCellIcon('" +
+            // id + 
+            // "' . '$product->id'); ?>')'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
+            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont' onclick='category.changeCellIcon('" +
+            id +
+            "')'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
+        }
+
+        /**
+         * ajax提交添加请求之后，刷新函数
+         * @param {*} data 
+         */
         category.refreshData = function (data) {
             if (data.length <= 0) {
                 return;
@@ -39,6 +56,10 @@ var Category = {
             $(".list-content").removeClass('hide');
         }
 
+        /**
+         * 提交新增项目表单
+         * @param {*} id 
+         */
         category.submitForm = function (id) {
             var params = {
                 "name": $("#name").val(),
