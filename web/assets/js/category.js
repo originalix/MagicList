@@ -19,7 +19,14 @@ var Category = {
 
         category.changeCellIcon = function (id) {
             console.log($(id).find($(".product-list-icon-block")));
-            
+
+            var functionName = "category.returnNormalIcon('" + id + "')";
+
+            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe648;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe6b3;</i>");
+            $(id).find(".product-center-icon").attr("onclick", functionName);
+        }
+
+        category.returnNormalIcon = function (id) {
             var functionName = "category.changeCellIcon('" + id + "')";
 
             $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
@@ -53,6 +60,11 @@ var Category = {
             var home = Home.createNew();
             home.switchIcon(0, data[0].category_id, true);
             $(".list-content").removeClass('hide');
+        }
+
+        category.queryPrice = function (name) {
+            console.log(name);
+            window.location.href = "https://search.jd.com/Search?keyword=" + name + "&enc=utf-8&wq=" + name;
         }
 
         /**
