@@ -42,7 +42,7 @@
                 <?php foreach( $products as $product ): ?>
                     <!-- row -->
                     <div class="list-content hide" id=<?php echo("list-content" . "$product->id"); ?>>
-                        <a href="#" class="list-link">
+                        <div href="#" class="list-link">
                             <div class="product-list-icon-block">
                                 <i class="product-left-icon iconfont">&#xe67d;</i>
                                 <i class="product-center-icon iconfont">&#xe636;</i>
@@ -68,14 +68,14 @@
                                     </p>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 <?php endforeach; ?>
 
                 <!-- 编辑cell -->
                 <div class="list-content hide">
                         <!-- 尚未编辑 -->
-                        <a href="#" class="list-link wait-edit" onclick="category.changeEditState()">
+                        <div href="###" class="list-link wait-edit" onclick="category.changeEditState()">
                             <div class="list-icon-block">
                                 <i class="list-icon iconfont">&#xe703;</i>
                             </div>
@@ -84,9 +84,9 @@
                                     Write your own
                                 </span>
                             </div>
-                        </a>
+                        </div>
                         <!-- 开始编辑 -->
-                        <a href="#" class="list-link editing">
+                        <div href="###" class="list-link editing">
                             <div class="list-icon-edit-block">
                                 <i class="list-left-icon iconfont" onclick="category.changeEditState()">&#xe625;</i>
 
@@ -115,7 +115,7 @@
                                     <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
                                 </form>
                             </div>
-                        </a>
+                        </>
                 </div>
 
             </div>
