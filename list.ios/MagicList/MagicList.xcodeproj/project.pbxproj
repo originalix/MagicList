@@ -12,6 +12,8 @@
 		5624C5BC1FF3C1AD00281014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5624C5BA1FF3C1AD00281014 /* Main.storyboard */; };
 		5624C5BE1FF3C1AD00281014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5624C5BD1FF3C1AD00281014 /* Assets.xcassets */; };
 		5624C5C11FF3C1AD00281014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5624C5BF1FF3C1AD00281014 /* LaunchScreen.storyboard */; };
+		5624C5D91FF3D59B00281014 /* MLMarco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5624C5D61FF3D59B00281014 /* MLMarco.swift */; };
+		5624C5E21FF3D64E00281014 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5624C5E11FF3D64E00281014 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5624C5BD1FF3C1AD00281014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5624C5C01FF3C1AD00281014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5624C5C21FF3C1AD00281014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5624C5D61FF3D59B00281014 /* MLMarco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLMarco.swift; sourceTree = "<group>"; };
+		5624C5E11FF3D64E00281014 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,168 @@
 		5624C5B51FF3C1AD00281014 /* MagicList */ = {
 			isa = PBXGroup;
 			children = (
-				5624C5B61FF3C1AD00281014 /* AppDelegate.swift */,
-				5624C5B81FF3C1AD00281014 /* ViewController.swift */,
-				5624C5BA1FF3C1AD00281014 /* Main.storyboard */,
-				5624C5BD1FF3C1AD00281014 /* Assets.xcassets */,
-				5624C5BF1FF3C1AD00281014 /* LaunchScreen.storyboard */,
-				5624C5C21FF3C1AD00281014 /* Info.plist */,
+				5624C5DA1FF3D5A200281014 /* AppDelegate */,
+				5624C5CB1FF3D59B00281014 /* Classes */,
+				5624C5CA1FF3D59400281014 /* Resource */,
 			);
 			path = MagicList;
+			sourceTree = "<group>";
+		};
+		5624C5CA1FF3D59400281014 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5BD1FF3C1AD00281014 /* Assets.xcassets */,
+				5624C5C21FF3C1AD00281014 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5624C5CB1FF3D59B00281014 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5CC1FF3D59B00281014 /* General */,
+				5624C5D41FF3D59B00281014 /* Helper */,
+				5624C5D51FF3D59B00281014 /* Macro */,
+				5624C5D71FF3D59B00281014 /* Sections */,
+				5624C5D81FF3D59B00281014 /* Vendors */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5624C5CC1FF3D59B00281014 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5CD1FF3D59B00281014 /* API */,
+				5624C5CE1FF3D59B00281014 /* Base */,
+				5624C5CF1FF3D59B00281014 /* Catagory */,
+				5624C5D01FF3D59B00281014 /* Global */,
+				5624C5D11FF3D59B00281014 /* Model */,
+				5624C5D21FF3D59B00281014 /* Public */,
+				5624C5D31FF3D59B00281014 /* Views */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		5624C5CD1FF3D59B00281014 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5624C5CE1FF3D59B00281014 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5624C5CF1FF3D59B00281014 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
+		5624C5D01FF3D59B00281014 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		5624C5D11FF3D59B00281014 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5624C5D21FF3D59B00281014 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5BA1FF3C1AD00281014 /* Main.storyboard */,
+				5624C5B81FF3C1AD00281014 /* ViewController.swift */,
+				5624C5BF1FF3C1AD00281014 /* LaunchScreen.storyboard */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		5624C5D31FF3D59B00281014 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5624C5D41FF3D59B00281014 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5624C5D51FF3D59B00281014 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5D61FF3D59B00281014 /* MLMarco.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		5624C5D71FF3D59B00281014 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5DD1FF3D64500281014 /* Hybrid */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		5624C5D81FF3D59B00281014 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		5624C5DA1FF3D5A200281014 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5B61FF3C1AD00281014 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5624C5DD1FF3D64500281014 /* Hybrid */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5DE1FF3D64500281014 /* Controllers */,
+				5624C5DF1FF3D64500281014 /* Models */,
+				5624C5E01FF3D64500281014 /* Views */,
+			);
+			path = Hybrid;
+			sourceTree = "<group>";
+		};
+		5624C5DE1FF3D64500281014 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5624C5E11FF3D64E00281014 /* WebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5624C5DF1FF3D64500281014 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5624C5E01FF3D64500281014 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +296,8 @@
 			files = (
 				5624C5B91FF3C1AD00281014 /* ViewController.swift in Sources */,
 				5624C5B71FF3C1AD00281014 /* AppDelegate.swift in Sources */,
+				5624C5D91FF3D59B00281014 /* MLMarco.swift in Sources */,
+				5624C5E21FF3D64E00281014 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R92MB35B2J;
-				INFOPLIST_FILE = MagicList/Info.plist;
+				INFOPLIST_FILE = MagicList/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lix.MagicList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R92MB35B2J;
-				INFOPLIST_FILE = MagicList/Info.plist;
+				INFOPLIST_FILE = MagicList/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lix.MagicList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
