@@ -64,7 +64,8 @@ var Category = {
 
         category.queryPrice = function (name) {
             console.log(name);
-            window.location.href = "https://search.jd.com/Search?keyword=" + name + "&enc=utf-8&wq=" + name;
+            // window.location.href = "https://search.jd.com/Search?keyword=" + name + "&enc=utf-8&wq=" + name;
+            window.location.href = "https://so.m.jd.com/ware/search.action?keyword=" + name;
         }
 
         /**
