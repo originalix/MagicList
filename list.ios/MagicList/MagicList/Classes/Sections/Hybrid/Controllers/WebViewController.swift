@@ -11,6 +11,11 @@ import UIKit
 class WebViewController: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let url: URL = URL.init(string: "http://www.list.local/homes?access-token=123")!
