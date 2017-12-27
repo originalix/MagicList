@@ -45,7 +45,7 @@
                         <div class="list-link">
                             <div class="product-list-icon-block">
                                 <i class="product-left-icon iconfont">&#xe67d;</i>
-                                <i class="product-center-icon iconfont" onclick="category.changeCellIcon('#<?php echo("list-content" . "$product->id"); ?>')">&#xe636;</i>
+                                <i class="product-center-icon iconfont" onclick="category.changeCellIcon(<?php echo $product; ?>)">&#xe636;</i>
                                 <i class="product-right-icon iconfont" onclick="category.queryPrice('<?php echo $product->name ?>');">&#xe603;</i>
                             </div>
                             <div class="list-title-block product-list-title-block">

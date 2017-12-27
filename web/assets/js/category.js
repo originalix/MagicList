@@ -17,18 +17,25 @@ var Category = {
             }
         }
 
-        category.changeCellIcon = function (id) {
-            console.log($(id).find($(".product-list-icon-block")));
+        category.changeCellIcon = function (product) {
+            console.log(product);
+            // console.log($(id).find($(".product-list-icon-block")));
 
-            var centerClickFunction = "category.returnNormalIcon('" + id + "')";
+            // var centerClickFunction = "category.returnNormalIcon('" + id + "')";
+            // var leftClickFunction = "category.deleteCell()";
+            // var rightClickFunction = "category.deleteCell();"
 
-            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe648;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe6b3;</i>");
-            $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
+            // $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe648;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe6b3;</i>");
+
+            // $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
+            // $(id).find(".product-left-icon").attr("onclick", leftClickFunction);
+            // $(id).find(".product-right-icon").attr("onclick", rightClickFunction);
         }
 
         category.returnNormalIcon = function (id) {
             var centerClickFunction = "category.changeCellIcon('" + id + "')";
-
+            var leftClickFunction = "category.deleteCell()";
+            var rightClickFunction = "category.deleteCell();"
             $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
             $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
         }
