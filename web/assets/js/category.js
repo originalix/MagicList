@@ -20,17 +20,17 @@ var Category = {
         category.changeCellIcon = function (id) {
             console.log($(id).find($(".product-list-icon-block")));
 
-            var functionName = "category.returnNormalIcon('" + id + "')";
+            var centerClickFunction = "category.returnNormalIcon('" + id + "')";
 
             $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe648;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe6b3;</i>");
-            $(id).find(".product-center-icon").attr("onclick", functionName);
+            $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
         }
 
         category.returnNormalIcon = function (id) {
-            var functionName = "category.changeCellIcon('" + id + "')";
+            var centerClickFunction = "category.changeCellIcon('" + id + "')";
 
             $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
-            $(id).find(".product-center-icon").attr("onclick", functionName);
+            $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
         }
 
         /**
@@ -64,7 +64,6 @@ var Category = {
 
         category.queryPrice = function (name) {
             console.log(name);
-            // window.location.href = "https://search.jd.com/Search?keyword=" + name + "&enc=utf-8&wq=" + name;
             window.location.href = "https://so.m.jd.com/ware/search.action?keyword=" + name;
         }
 
@@ -97,6 +96,10 @@ var Category = {
                     }
                 }
             });
+        }
+
+        category.deleteCell = function (id) {
+            console.log('delete cell');
         }
 
         return category;
