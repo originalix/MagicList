@@ -18,13 +18,28 @@ var Category = {
         }
 
         category.changeCellIcon = function (product, type) {
-
             var id = "#list-content" + product.id;
-            var centerClickFunction = "category.returnNormalIcon('" + product.id + "')";
+
+            var isNormal = type === "normal";
+
+            var leftIcon = isNormal ? '&#xe67d;' : '&#xe648;';
+            var rightIcon = isNormal ? '&#xe603;' : '&#xe6b3;';
+
+            console.log(type);
+            console.log(isNormal);
+            console.log(leftIcon);
+            console.log(rightIcon);
+
+            type = isNormal ? 'edit' : 'normal';
+
+            console.log(type);
+
+            var centerClickFunction = "category.changeCellIcon(" + JSON.stringify(product) + ", '" + type + "')";
             var leftClickFunction = "category.deleteCell('" + product.id + "')";
             var rightClickFunction = "category.deleteCell('" + product.id + "')";
 
-            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe648;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe6b3;</i>");
+
+            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>" + leftIcon + "</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>" + rightIcon + "</i>");
 
             $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
             $(id).find(".product-left-icon").attr("onclick", leftClickFunction);
@@ -34,7 +49,7 @@ var Category = {
         category.returnNormalIcon = function (id) {
             var centerClickFunction = "category.changeCellIcon('" + id + "')";
             var leftClickFunction = "category.deleteCell()";
-            var rightClickFunction = "category.deleteCell();"
+            var rightClickFunction = "category.deleteCell()";
             $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
             $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
         }
