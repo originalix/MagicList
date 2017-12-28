@@ -18,7 +18,8 @@ var Category = {
         }
 
         category.changeCellIcon = function (product) {
-            console.log(product);
+            console.log('hello');
+            // console.log(product);
             // console.log($(id).find($(".product-list-icon-block")));
 
             // var centerClickFunction = "category.returnNormalIcon('" + id + "')";
@@ -42,7 +43,7 @@ var Category = {
 
         /**
          * ajax提交添加请求之后，刷新函数
-         * @param {*} data 
+         * @param {*} data
          */
         category.refreshData = function (data) {
             if (data.length <= 0) {
@@ -76,7 +77,7 @@ var Category = {
 
         /**
          * 提交新增项目表单
-         * @param {*} id 
+         * @param {*} id
          */
         category.submitForm = function (id) {
             var params = {
