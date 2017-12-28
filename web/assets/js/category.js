@@ -25,33 +25,20 @@ var Category = {
             var leftIcon = isNormal ? '&#xe67d;' : '&#xe648;';
             var rightIcon = isNormal ? '&#xe603;' : '&#xe6b3;';
 
+            var centerClickFunction = "category.changeCellIcon(" + JSON.stringify(product) + ", '" + type + "')"; 
+            var leftClickFunction = "category.deleteCell('" + product.id + "')";
+            var rightClickFunction = isNormal ? "category.queryPrice('" + product.name + "')" : "category.deleteCell('" + product.id + "')";
             console.log(type);
             console.log(isNormal);
-            console.log(leftIcon);
-            console.log(rightIcon);
-
+            console.log(rightClickFunction);
+            
             type = isNormal ? 'edit' : 'normal';
-
-            console.log(type);
-
-            var centerClickFunction = "category.changeCellIcon(" + JSON.stringify(product) + ", '" + type + "')";
-            var leftClickFunction = "category.deleteCell('" + product.id + "')";
-            var rightClickFunction = "category.deleteCell('" + product.id + "')";
-
 
             $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>" + leftIcon + "</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>" + rightIcon + "</i>");
 
             $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
             $(id).find(".product-left-icon").attr("onclick", leftClickFunction);
             $(id).find(".product-right-icon").attr("onclick", rightClickFunction);
-        }
-
-        category.returnNormalIcon = function (id) {
-            var centerClickFunction = "category.changeCellIcon('" + id + "')";
-            var leftClickFunction = "category.deleteCell()";
-            var rightClickFunction = "category.deleteCell()";
-            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i>");
-            $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
         }
 
         /**
