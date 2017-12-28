@@ -17,20 +17,18 @@ var Category = {
             }
         }
 
-        category.changeCellIcon = function (product) {
-            console.log('hello');
-            // console.log(product);
-            // console.log($(id).find($(".product-list-icon-block")));
+        category.changeCellIcon = function (product, type) {
 
-            // var centerClickFunction = "category.returnNormalIcon('" + id + "')";
-            // var leftClickFunction = "category.deleteCell()";
-            // var rightClickFunction = "category.deleteCell();"
+            var id = "#list-content" + product.id;
+            var centerClickFunction = "category.returnNormalIcon('" + product.id + "')";
+            var leftClickFunction = "category.deleteCell('" + product.id + "')";
+            var rightClickFunction = "category.deleteCell('" + product.id + "')";
 
-            // $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe648;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe6b3;</i>");
+            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>&#xe648;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe6b3;</i>");
 
-            // $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
-            // $(id).find(".product-left-icon").attr("onclick", leftClickFunction);
-            // $(id).find(".product-right-icon").attr("onclick", rightClickFunction);
+            $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
+            $(id).find(".product-left-icon").attr("onclick", leftClickFunction);
+            $(id).find(".product-right-icon").attr("onclick", rightClickFunction);
         }
 
         category.returnNormalIcon = function (id) {
