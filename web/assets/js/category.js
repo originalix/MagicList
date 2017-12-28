@@ -25,14 +25,12 @@ var Category = {
             var leftIcon = isNormal ? '&#xe67d;' : '&#xe648;';
             var rightIcon = isNormal ? '&#xe603;' : '&#xe6b3;';
 
-            var centerClickFunction = "category.changeCellIcon(" + JSON.stringify(product) + ", '" + type + "')"; 
-            var leftClickFunction = "category.deleteCell('" + product.id + "')";
-            var rightClickFunction = isNormal ? "category.queryPrice('" + product.name + "')" : "category.deleteCell('" + product.id + "')";
-            console.log(type);
-            console.log(isNormal);
-            console.log(rightClickFunction);
-            
+            var leftClickFunction = isNormal ? "" : "category.deleteCell('" + product.id + "')";
+            var rightClickFunction = isNormal ? "category.queryPrice('" + product.name + "')" : "category.editCell('" + product.id + "')";
+
             type = isNormal ? 'edit' : 'normal';
+
+            var centerClickFunction = "category.changeCellIcon(" + JSON.stringify(product) + ", '" + type + "')"; 
 
             $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>" + leftIcon + "</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>" + rightIcon + "</i>");
 
@@ -108,6 +106,10 @@ var Category = {
 
         category.deleteCell = function (id) {
             console.log('delete cell');
+        }
+
+        category.editCell = function (id) {
+            console.log('edit cell');
         }
 
         return category;
