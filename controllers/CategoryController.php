@@ -42,6 +42,7 @@ class CategoryController extends BaseController
 
     public function actionDelete($id)
     {
-        
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        return ['id' => $id];
     }
 }

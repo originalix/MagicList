@@ -108,9 +108,9 @@ var Category = {
             console.log('delete cell');
             $.ajax({
                 type: "DELETE",
-                url: "",
+                url: "/categorys/delete?id=" + id,
                 success: function(result) {
-
+                    
                 }
             });
         }
