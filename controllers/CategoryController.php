@@ -39,4 +39,9 @@ class CategoryController extends BaseController
         
         return ['code' => 402, 'msg' => $model->getModelError($model)];
     }
+
+    public function actionDelete($id)
+    {
+        
+    }
 }

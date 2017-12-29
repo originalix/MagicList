@@ -106,6 +106,13 @@ var Category = {
 
         category.deleteCell = function (id) {
             console.log('delete cell');
+            $.ajax({
+                type: "DELETE",
+                url: "",
+                success: function(result) {
+
+                }
+            });
         }
 
         category.editCell = function (id) {
