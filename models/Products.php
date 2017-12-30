@@ -62,6 +62,18 @@ class Products extends \yii\db\ActiveRecord
         }
         return false;
     }
+
+    public function deleteById($id)
+    {
+        $model = Products::findOne($id);
+        if ($model != nulll) {
+            if ($model->delete()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
     
     public static function getModelError($model) {
         $errors = $model->getErrors();    //得到所有的错误信息

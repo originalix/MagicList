@@ -46,6 +46,13 @@ class CategoryController extends BaseController
         if (!Yii::$app->request->isAjax && !Yii::$app->request->isDelete) {
             return ['code' => 401, 'msg' => '请求方法不被允许'];
         }
-        return ['id' => $id];
+
+        $model = new Products;
+        if ($model->deleteById($id)) {
+            $models = Products::find()->all();
+            return ['code' => 200, 'msg' => '删除成功', 'data' => $models];
+        }
+
+        return ['code' => 402, 'msg' => $model->getModelError($model)];
     }
 }
