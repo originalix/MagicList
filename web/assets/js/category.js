@@ -17,6 +17,11 @@ var Category = {
             }
         }
 
+        /**
+         * 点击中间小圆圈 变更两边的icon图标
+         * @param {*} product 商品模型
+         * @param {*} type icon类型
+         */
         category.changeCellIcon = function (product, type) {
             var id = "#list-content" + product.id;
 
@@ -68,6 +73,10 @@ var Category = {
             $(".list-content").removeClass('hide');
         }
 
+        /**
+         * 京东的查价操作
+         * @param {*} name 商品名称
+         */
         category.queryPrice = function (name) {
             console.log(name);
             window.location.href = "https://so.m.jd.com/ware/search.action?keyword=" + name;
@@ -105,6 +114,10 @@ var Category = {
             });
         }
 
+        /**
+         * 单元格的删除操作
+         * @param {*} id model id
+         */
         category.deleteCell = function (id) {
             console.log('delete cell');
             $.ajax({
