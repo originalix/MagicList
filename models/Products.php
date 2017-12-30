@@ -66,7 +66,7 @@ class Products extends \yii\db\ActiveRecord
     public function deleteById($id)
     {
         $model = Products::findOne($id);
-        if ($model != nulll) {
+        if ($model != NULL) {
             if ($model->delete()) {
                 return true;
             }

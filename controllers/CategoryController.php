@@ -53,6 +53,6 @@ class CategoryController extends BaseController
             return ['code' => 200, 'msg' => '删除成功', 'data' => $models];
         }
 
-        return ['code' => 402, 'msg' => $model->getModelError($model)];
+        return ['code' => 402, 'msg' => '删除失败'];
     }
 }
