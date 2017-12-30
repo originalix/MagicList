@@ -43,6 +43,9 @@ class CategoryController extends BaseController
     public function actionDelete($id)
     {
         \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        if (!Yii::$app->request->isAjax && !Yii::$app->request->isDelete) {
+            return ['code' => 401, 'msg' => '请求方法不被允许'];
+        }
         return ['id' => $id];
     }
 }
