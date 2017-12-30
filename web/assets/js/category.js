@@ -99,6 +99,7 @@ var Category = {
                         category.refreshData(response.data);
                     } else {
                         console.log('code = ' + code + '; msg = ' + msg);
+                        alert(msg);
                     }
                 }
             });
@@ -109,8 +110,16 @@ var Category = {
             $.ajax({
                 type: "DELETE",
                 url: "/categorys/delete?id=" + id,
-                success: function(result) {
-                    
+                success: function(response) {
+                    var code = response.code;
+                    var msg = response.msg;
+                    if (code == 200) {
+                        console.log (response.data);
+                        category.refreshData(response.data);
+                    } else {
+                        console.log('code = ' + code + '; msg = ' + msg);
+                        alert(msg);
+                    }
                 }
             });
         }
