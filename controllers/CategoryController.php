@@ -63,6 +63,8 @@ class CategoryController extends BaseController
             return ['code' => 401, 'msg' => '请求方法不被允许'];
         }
 
-        return ['code' => 200, 'msg' => '编辑成功'];
+        $model = Products::findOne($id);
+        $params = Yii::$app->request->bodyParams;
+        return ['code' => 200, 'data' => $params];
     }
 }
