@@ -152,8 +152,8 @@ var Category = {
 
         category.cancelEdit = function (id) {
             var cellId = "#list-content" + id;
-            console.log(cellId);
-            // $(cellId).html = category.frontEditHtml;
+            console.log(category.frontEditHtml);
+            $(cellId).html(category.frontEditHtml);
         }
 
         return category;
