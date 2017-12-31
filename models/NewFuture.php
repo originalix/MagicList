@@ -15,3 +15,5 @@ class Future2018 extends Year2017
         print "Hello, 2018";
     }
 }
+
+$youAndMe = new Future2018;
