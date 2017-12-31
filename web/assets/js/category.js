@@ -31,7 +31,7 @@ var Category = {
             var rightIcon = isNormal ? '&#xe603;' : '&#xe6b3;';
 
             var leftClickFunction = isNormal ? "" : "category.deleteCell('" + product.id + "')";
-            var rightClickFunction = isNormal ? "category.queryPrice('" + product.name + "')" : "category.editCell('" + product.id + "')";
+            var rightClickFunction = isNormal ? "category.queryPrice('" + product.name + "')" : "category.editCell('" + product + "')";
 
             type = isNormal ? 'edit' : 'normal';
 
