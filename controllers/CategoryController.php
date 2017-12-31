@@ -55,4 +55,14 @@ class CategoryController extends BaseController
 
         return ['code' => 402, 'msg' => '删除失败'];
     }
+
+    public function actionUpdate($id)
+    {
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        if (!Yii::$app->request->isAjax && !Yii::$app->request->isPut) {
+            return ['code' => 401, 'msg' => '请求方法不被允许'];
+        }
+
+        return ['code' => 200, 'msg' => '编辑成功'];
+    }
 }
