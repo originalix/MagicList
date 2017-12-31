@@ -7,3 +7,11 @@ class Year2017
         print "Goodbye, 2017";
     }
 }
+
+class Future2018 extends Year2017
+{
+    function __construct()
+    {
+        print "Hello, 2018";
+    }
+}
