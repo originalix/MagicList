@@ -54,9 +54,9 @@ var Category = {
             }
             var html = "";
             for (var i = 0; i < data.length; i++) {
-                html += "<div class='list-content hide' id= " +
+                html += "<div class='list-content hide' id='list-content" +
                     data[i].id +
-                    "<div href='#' class='list-link'> <ddiv class='product-list-icon-block'> <i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>&#xe603;</i> </ddiv> <div class='list-title-block product-list-title-block'> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe693;</i> <p class='product-list-title product-name'>" +
+                    "'> <div href='#' class='list-link'> <div class='product-list-icon-block'> <i class='product-left-icon iconfont'>&#xe67d;</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont' onclick='category.queryPrice('HHKB')'>&#xe603;</i> </div> <div class='list-title-block product-list-title-block'> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe693;</i> <p class='product-list-title product-name'>" +
                     data[i].name +
                     "</p> </div> <div class='product-list-seprate'> <i class='list-name-icon iconfont'>&#xe6da;</i> <p class='product-list-title product-price'> ￥" +
                     data[i].price +
