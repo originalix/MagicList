@@ -24,7 +24,6 @@ var Category = {
          */
         category.changeCellIcon = function (product, type) {
             var id = "#list-content" + product.id;
-
             var isNormal = type === "normal";
 
             var leftIcon = isNormal ? '&#xe67d;' : '&#xe648;';
@@ -36,9 +35,6 @@ var Category = {
             type = isNormal ? 'edit' : 'normal';
 
             var centerClickFunction = "category.changeCellIcon(" + JSON.stringify(product) + ", '" + type + "')";
-
-            var t1 = $(id).find($(".product-list-icon-block")).html();
-            console.log(t1);
 
             $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>" + leftIcon + "</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>" + rightIcon + "</i>");
 
@@ -74,6 +70,10 @@ var Category = {
             var home = Home.createNew();
             home.switchIcon(0, data[0].category_id, true);
             $(".list-content").removeClass('hide');
+
+            for (var i = 0; i < data.length; i++) {
+                category.changeCellIcon(data[i], 'edit');
+            }
         }
 
         /**
@@ -176,7 +176,6 @@ var Category = {
                     var msg = response.msg;
                     var data = response.data;
                     if (code == 200) {
-                        console.log (response.data);
                         category.refreshData(response.data);
                     } else {
                         console.log('code = ' + code + '; msg = ' + msg);
