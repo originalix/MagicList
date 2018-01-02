@@ -36,7 +36,7 @@ var Category = {
 
             var centerClickFunction = "category.changeCellIcon(" + JSON.stringify(product) + ", '" + type + "')";
 
-            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>" + leftIcon + "</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>" + rightIcon + "</i>");
+            $(id).find($(".product-list-icon-block")).html("<i class='product-left-icon iconfont'>" + leftIcon + "</i> <i class='product-center-icon iconfont'>&#xe636;</i> <i class='product-right-icon iconfont'>" + rightIcon + "</i>").fadeIn;
 
             $(id).find(".product-center-icon").attr("onclick", centerClickFunction);
             $(id).find(".product-left-icon").attr("onclick", leftClickFunction);

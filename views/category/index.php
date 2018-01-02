@@ -41,7 +41,7 @@
                 <!-- 循环展示清单类目列表 -->
                 <?php foreach( $products as $product ): ?>
                     <!-- row -->
-                    <div class="list-content hide" id=<?php echo("list-content" . "$product->id"); ?>>
+                    <div class="list-content" id=<?php echo("list-content" . "$product->id"); ?>>
                         <div class="list-link">
                             <div class="product-list-icon-block">
                                 <i class="product-left-icon iconfont">&#xe67d;</i>
@@ -129,6 +129,6 @@
     var category = Category.createNew();
     var home = Home.createNew();
     home.switchIcon(0, <?php echo $category->id; ?>, true);
-    $(".list-content").removeClass('hide');
+    $(".list-content").fadeIn("slow");
 </script>
 </html>
