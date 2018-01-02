@@ -11,7 +11,6 @@
 }
 
 .list-content {
-    display: none;
     margin-top: 0.27rem;
     margin-left: 0.15rem;
     width: 47%;
@@ -230,4 +229,13 @@ input:focus, textarea:focus {
 
 .product-list-seprate {
     margin-top: 0.1rem;
+}
+
+.sliderbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.43rem;
+    height: 100%;
+    background-color: red;
 }

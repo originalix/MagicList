@@ -72,7 +72,7 @@ var Category = {
             $(".list-content").removeClass('hide');
 
             for (var i = 0; i < data.length; i++) {
-                category.changeCellIcon(data[i], 'edit');
+                category.changeCellIcon(data[i], 'normal');
             }
         }
 
