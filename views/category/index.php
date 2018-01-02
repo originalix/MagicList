@@ -32,7 +32,7 @@
             <div class="header-content">
                 <i class="home-calendar iconfont" onclick="window.history.go(-1)">&#xe624;</i>
                 <div class="home-title"><?php echo $category->name; ?></div>
-                <i class="home-setting iconfont">&#xe600;</i>
+                <i class="home-setting iconfont" id="nav-setting">&#xe600;</i>
             </div>
         </header>
 
@@ -121,7 +121,7 @@
             </div>
         </div>
         <div class="sliderbar">
-            
+
         </div>
     </div>
 </body>
@@ -133,5 +133,13 @@
     var home = Home.createNew();
     home.switchIcon(0, <?php echo $category->id; ?>, true);
     $(".list-content").removeClass("hide");
+
+    $(function () {
+        $("#nav-setting").toggle(function () {
+            $(".sliderbar").fadeIn();
+        }, function () {
+            $(".sliderbar").fadeOut();
+        });
+    });
 </script>
 </html>

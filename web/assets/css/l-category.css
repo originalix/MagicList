@@ -232,10 +232,13 @@ input:focus, textarea:focus {
 }
 
 .sliderbar {
+    display: none;
     position: absolute;
     top: 0;
-    right: 0;
+    /* right: -2.43rem;
+     */
+    right: 0rem;
+    bottom: 0.9rem;
     width: 2.43rem;
-    height: 100%;
-    background-color: red;
+    background-color: #b3b3b3;
 }
