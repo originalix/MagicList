@@ -31,7 +31,7 @@ var Category = {
             var rightIcon = isNormal ? '&#xe603;' : '&#xe6b3;';
 
             var leftClickFunction = isNormal ? "" : "category.deleteCell('" + product.id + "')";
-            var rightClickFunction = isNormal ? "category.queryPrice('" + product.name + "')" : "category.editCell('" + product + "')";
+            var rightClickFunction = isNormal ? "category.queryPrice('" + product.name + "')" : "category.editCell('" + JSON.stringify(product) + "')";
 
             type = isNormal ? 'edit' : 'normal';
 
@@ -139,14 +139,16 @@ var Category = {
 
         category.frontEditHtml = "";
 
-        category.editCell = function (id) {
-            // var cellId = "#list-content" + id;
-            // category.frontEditHtml = $(cellId).html();
+        category.editCell = function (product) {
+            var data = JSON.parse(product);
+            console.log(data);
+            var cellId = "#list-content" + data.id;
+            category.frontEditHtml = $(cellId).html();
 
-            // $(cellId).html("<!-- 开始编辑 --> <div href='#' class='list-link'> <div class='list-icon-edit-block'> <i class='list-left-icon iconfont' onclick='category.cancelEdit(" + 
-            // id + ")'>&#xe625;</i> <i class='list-right-icon iconfont' onclick='category.submitEdit(" +
-            // id +
-            // ")'>&#xe627;</i> </div> <div class='add-form'> <form id='form' method='post' class='form-content'> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe693;</i> <input type='text' name='name' id='name" + id + "' class='category-input' placeholder='单品名称'> <hr class='form-separated'></hr> </div> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe6da;</i> <input type='text' name='price' id='price" + id + "' class='category-input' placeholder='单品单价'> <hr class='form-separated'></hr> </div> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe6f1;</i> <input type='text' name='count' id='count" + id + "' class='category-input' placeholder='购买数量'> <hr class='form-separated'></hr> </div> <input type='hidden' name='_csrf' value='<?=Yii::$app->request->getCsrfToken()?>' /> </form> </div> </div> </div>");
+            $(cellId).html("<!-- 开始编辑 --> <div href='#' class='list-link'> <div class='list-icon-edit-block'> <i class='list-left-icon iconfont' onclick='category.cancelEdit(" + 
+            data.id + ")'>&#xe625;</i> <i class='list-right-icon iconfont' onclick='category.submitEdit(" +
+            data.id +
+            ")'>&#xe627;</i> </div> <div class='add-form'> <form id='form' method='post' class='form-content'> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe693;</i> <input type='text' name='name' id='name" + data.id + "' class='category-input' placeholder='单品名称' value='" + data.name + "'> <hr class='form-separated'></hr> </div> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe6da;</i> <input type='text' name='price' id='price" + data.id + "' class='category-input' placeholder='单品单价'> <hr class='form-separated'></hr> </div> <div class='input-control'> <i class='form-edit-icon iconfont'>&#xe6f1;</i> <input type='text' name='count' id='count" + data.id + "' class='category-input' placeholder='购买数量'> <hr class='form-separated'></hr> </div> <input type='hidden' name='_csrf' value='<?=Yii::$app->request->getCsrfToken()?>' /> </form> </div> </div> </div>");
         }
 
         category.cancelEdit = function (id) {

@@ -45,7 +45,7 @@
                         <div class="list-link">
                             <div class="product-list-icon-block">
                                 <i class="product-left-icon iconfont">&#xe67d;</i>
-                                <i class="product-center-icon iconfont" onclick="category.changeCellIcon(<?php echo str_replace('"', "'", json_encode($product->getAttributes(array('id', 'name', 'price')))); ?>, 'edit');">&#xe636;</i>
+                                <i class="product-center-icon iconfont" onclick="category.changeCellIcon(<?php echo str_replace('"', "'", json_encode($product->getAttributes(array('id', 'name', 'price', 'count')))); ?>, 'edit');">&#xe636;</i>
                                 <i class="product-right-icon iconfont" onclick="category.queryPrice('<?php echo $product->name ?>');">&#xe603;</i>
                             </div>
                             <div class="list-title-block product-list-title-block">
