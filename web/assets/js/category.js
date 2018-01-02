@@ -172,9 +172,13 @@ var Category = {
                     var code = response.code;
                     var msg = response.msg;
                     var data = response.data;
-                    console.log(code);
-                    console.log(msg);
-                    console.log(data);
+                    if (code == 200) {
+                        console.log (response.data);
+                        category.refreshData(response.data);
+                    } else {
+                        console.log('code = ' + code + '; msg = ' + msg);
+                        alert(msg);
+                    }                    
                 }
             });
         }

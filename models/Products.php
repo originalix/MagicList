@@ -75,12 +75,11 @@ class Products extends \yii\db\ActiveRecord
         return false;
     }
 
-    public function edit($params)
+    public function edit($data)
     {
-        $this->name = $params->name;
-        $this->price = $params->price;
-        $this->count = $params->count;
-
+        $this->name = $data['name'];
+        $this->price = doubleval($data['price']);
+        $this->count = intval($data['count']);
         if ($this->validate()) {
             if ($this->save()) {
                 return true;

@@ -69,7 +69,7 @@ class CategoryController extends BaseController
             $models = Products::find()->all();
             return ['code' => 200, 'msg' => '编辑成功', 'data' => $models];
         }
-        
+
         return ['code' => 402, 'msg' => '编辑失败'];
     }
 }
