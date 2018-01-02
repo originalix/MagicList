@@ -74,7 +74,22 @@ class Products extends \yii\db\ActiveRecord
 
         return false;
     }
-    
+
+    public function edit($params)
+    {
+        $this->name = $params->name;
+        $this->price = $params->price;
+        $this->count = $params->count;
+
+        if ($this->validate()) {
+            if ($this->save()) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
     public static function getModelError($model) {
         $errors = $model->getErrors();    //得到所有的错误信息
         if(!is_array($errors)) return '';

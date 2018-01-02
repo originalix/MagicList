@@ -171,8 +171,10 @@ var Category = {
                 success: function (response) {
                     var code = response.code;
                     var msg = response.msg;
+                    var data = response.data;
                     console.log(code);
                     console.log(msg);
+                    console.log(data);
                 }
             });
         }

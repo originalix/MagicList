@@ -65,6 +65,11 @@ class CategoryController extends BaseController
 
         $model = Products::findOne($id);
         $params = Yii::$app->request->bodyParams;
-        return ['code' => 200, 'data' => $params];
+        if ($model->edit($params)) {
+            $models = Products::find()->all();
+            return ['code' => 200, 'msg' => '编辑成功', 'data' => $models];
+        }
+        
+        return ['code' => 402, 'msg' => '编辑失败'];
     }
 }
