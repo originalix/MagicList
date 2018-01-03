@@ -232,13 +232,27 @@ input:focus, textarea:focus {
 }
 
 .sliderbar {
-    display: none;
+    /* display: none; */
     position: absolute;
     z-index: 20;
     top: 0.9rem;
-    right: -2.43rem;
+    /* right: -2.17rem; */
+    right: 0rem;
     bottom: 0.9rem;
-    width: 2.43rem;
+    width: 2.17rem;
     background-color: #b3b3b3;
     border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.icon-list {
+    margin: 0;
+}
+
+.icon-cell {
+    list-style-type: none;
+    font-size: 0.3rem;
+}
+
+.slider-icon-font {
+    font-size: 0.61rem;
 }

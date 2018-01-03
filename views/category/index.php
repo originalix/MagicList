@@ -121,7 +121,20 @@
             </div>
         </div>
         <div class="sliderbar">
-
+            <ul class="icon-list">
+                <li class="icon-cell">
+                    <i class="slider-icon-font iconfont">&#xe631;</i>
+                    <span class="icontitle">查看报表</span>
+                </li>
+                <li class="icon-cell">
+                    <i class="slider-icon-font iconfont">&#xe630;</i>
+                    <span class="icontitle">定时任务</span>
+                </li>
+                <li class="icon-cell">
+                    <i class="slider-icon-font iconfont">&#xe634;</i>
+                    <span class="icontitle">分享</span>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
@@ -138,7 +151,7 @@
         $("#nav-setting").click(function() {
             var $content = $(".sliderbar");
             if ($content.is(":visible")) {
-                $content.animate({right: "-2.43rem"}, 300)
+                $content.animate({right: "-2.17rem"}, 300)
                 .fadeOut();
             } else {
                 $content.fadeIn()
