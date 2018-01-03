@@ -234,7 +234,8 @@ input:focus, textarea:focus {
 .sliderbar {
     display: none;
     position: absolute;
-    top: 0;
+    z-index: 20;
+    top: 1.37rem;
     right: -2.43rem;
     bottom: 0.9rem;
     width: 2.43rem;

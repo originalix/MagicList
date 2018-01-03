@@ -138,11 +138,11 @@
         $("#nav-setting").click(function() {
             var $content = $(".sliderbar");
             if ($content.is(":visible")) {
-                $content.animate({right: "-2.43rem"}, 500)
+                $content.animate({right: "-2.43rem"}, 300)
                 .fadeOut();
             } else {
                 $content.fadeIn()
-                .animate({right: "0rem"}, 500);
+                .animate({right: "0rem"}, 300);
             }
         });
     });
