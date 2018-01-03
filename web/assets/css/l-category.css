@@ -235,9 +235,10 @@ input:focus, textarea:focus {
     display: none;
     position: absolute;
     z-index: 20;
-    top: 1.37rem;
+    top: 0.9rem;
     right: -2.43rem;
     bottom: 0.9rem;
     width: 2.43rem;
     background-color: #b3b3b3;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
