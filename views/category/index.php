@@ -135,10 +135,15 @@
     $(".list-content").removeClass("hide");
 
     $(function () {
-        $("#nav-setting").toggle(function () {
-            $(".sliderbar").fadeIn();
-        }, function () {
-            $(".sliderbar").fadeOut();
+        $("#nav-setting").click(function() {
+            var $content = $(".sliderbar");
+            if ($content.is(":visible")) {
+                $content.animate({right: "-2.43rem"}, 500);
+                $content.fadeOut();
+            } else {
+                $content.fadeIn();
+                $content.animate({right: "0rem"}, 500);
+            }
         });
     });
 </script>

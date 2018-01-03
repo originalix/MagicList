@@ -235,9 +235,9 @@ input:focus, textarea:focus {
     display: none;
     position: absolute;
     top: 0;
-    /* right: -2.43rem;
-     */
-    right: 0rem;
+    right: -2.43rem;
+    
+    /* right: 0rem; */
     bottom: 0.9rem;
     width: 2.43rem;
     background-color: #b3b3b3;
