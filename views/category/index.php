@@ -124,15 +124,15 @@
             <ul class="icon-list">
                 <li class="icon-cell">
                     <i class="slider-icon-font iconfont">&#xe631;</i>
-                    <span class="icontitle">查看报表</span>
+                    <p class="icontitle">查看报表</p>
                 </li>
                 <li class="icon-cell">
                     <i class="slider-icon-font iconfont">&#xe630;</i>
-                    <span class="icontitle">定时任务</span>
+                    <p class="icontitle">定时任务</p>
                 </li>
                 <li class="icon-cell">
                     <i class="slider-icon-font iconfont">&#xe634;</i>
-                    <span class="icontitle">分享</span>
+                    <p class="icontitle">分享</p>
                 </li>
             </ul>
         </div>
