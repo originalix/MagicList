@@ -72,4 +72,19 @@ class CategoryController extends BaseController
 
         return ['code' => 402, 'msg' => '编辑失败'];
     }
+
+    public function actionStatement()
+    {
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        $id = Yii::$app->request->get('id');
+        if ( empty($id) ) {
+            return ['code' => 418, 'msg' => '生成报表失败'];
+        }
+
+        $models = Products::find()
+        ->where(['category_id' => $id])
+        ->all();
+
+        return ['code' => 200, 'data' => $models];
+    }
 }
