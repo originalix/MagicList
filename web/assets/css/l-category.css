@@ -240,7 +240,7 @@ input:focus, textarea:focus {
     right: 0rem;
     bottom: 0.9rem;
     width: 2.17rem;
-    background-color: rgba(179, 179, 179, 0.9);
+    background-color: rgba(179, 179, 179, 1);
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
@@ -255,8 +255,8 @@ input:focus, textarea:focus {
 }
 
 .icon-cell {
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
     list-style-type: none;
     font-size: 0.3rem;
 }
@@ -265,10 +265,12 @@ input:focus, textarea:focus {
     margin-left: 0.78rem;
     font-size: 0.61rem;
     text-align: center;
+    color: #666666;
 }
 
 .icontitle {
     margin: 0.1rem 0 0 0;
     padding: 0;
     text-align: center;
+    color: #666666;
 }
