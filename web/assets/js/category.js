@@ -186,7 +186,11 @@ var Category = {
         }
 
         category.queryStatement = function (id) {
-            alert('准备查看详细报表');
+            console.log(id);
+            $.get("/categorys/statement?id=" + id, function (data) {
+                console.log(data);
+                alert('当前清单共有' + data.total + "件商品， 总计金额" + data.price + "元");
+            });
         }
 
         return category;

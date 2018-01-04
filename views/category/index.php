@@ -160,7 +160,7 @@
         });
 
         $("#statement").click(function() {
-            category.queryStatement();
+            category.queryStatement(<?php echo $category->id; ?>);
         });
     });
 

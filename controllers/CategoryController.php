@@ -85,6 +85,13 @@ class CategoryController extends BaseController
         ->where(['category_id' => $id])
         ->all();
 
-        return ['code' => 200, 'data' => $models];
+        $sum = 0;
+        $total = 0;
+        foreach ($models as $model) {
+            $sum += $model->price * $model->count;
+            $total += $model->count;
+        }
+
+        return ['code' => 200, 'price' => $sum, 'total' => $total];
     }
 }
