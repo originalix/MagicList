@@ -185,6 +185,10 @@ var Category = {
             });
         }
 
+        category.queryStatement = function (id) {
+            alert('准备查看详细报表');
+        }
+
         return category;
     }
 }

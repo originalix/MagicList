@@ -122,7 +122,7 @@
         </div>
         <div class="sliderbar">
             <ul class="icon-list">
-                <li class="icon-cell">
+                <li class="icon-cell" id="statement">
                     <i class="slider-icon-font iconfont">&#xe631;</i>
                     <p class="icontitle">查看报表</p>
                 </li>
@@ -157,6 +157,10 @@
                 $content.fadeIn()
                 .animate({right: "0rem"}, 300);
             }
+        });
+
+        $("#statement").click(function() {
+            category.queryStatement();
         });
     });
 
